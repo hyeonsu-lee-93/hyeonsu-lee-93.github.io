@@ -20,69 +20,78 @@ superuser: true
 highlight_name: true
 
 # Role/position/tagline
-role: Chief Scientist
+role: Postdoctoral Researcher
 
 # Organizations/Affiliations to display in Biography blox
 organizations:
-  - name: OpenAI
-    url: https://openai.com/
+  - name: Korea Institute of Science and Technology (KIST)
+    url: 
 
 # Social network links
 # Need to use another icon? Simply download the SVG icon to your `assets/media/icons/` folder.
 profiles:
   - icon: at-symbol
-    url: 'mailto:your-email@example.com'
+    url: 'hyeonsu.lee.93@gmail.com'
     label: E-mail Me
-  - icon: brands/x
-    url: https://twitter.com/GetResearchDev
-  - icon: brands/instagram
-    url: https://www.instagram.com/
-  - icon: brands/github
-    url: https://github.com/gcushen
-  - icon: brands/linkedin
-    url: https://www.linkedin.com/
+
+  # - icon: brands/x
+  #   url: https://twitter.com/GetResearchDev
+
+  # - icon: brands/instagram
+  #   url: https://www.instagram.com/
+
+  # - icon: brands/github
+  #   url: https://github.com/gcushen
+
   - icon: academicons/google-scholar
-    url: https://scholar.google.com/
-  - icon: academicons/orcid
-    url: https://orcid.org/
+    url: https://scholar.google.co.kr/citations?user=SQJck9IAAAAJ&hl=ko&oi=ao/
+
+      - icon: brands/linkedin
+    url: https://www.linkedin.com/in/hyeonsu-lee-908544258
+
+  # - icon: academicons/orcid
+  #   url: https://orcid.org/
 
 interests:
-  - Artificial Intelligence
+  - Computational Neuroscience
   - Computational Linguistics
   - Information Retrieval
 
 education:
   - area: PhD Artificial Intelligence
-    institution: Stanford University
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+    institution: KAIST
+    date_start: 2018-02-26
+    date_end: 2024-08-16
     summary: |
       Thesis on _Why LLMs are awesome_. Supervised by [Prof Joe Smith](https://example.com). Presented papers at 5 IEEE conferences with the contributions being published in 2 Springer journals.
     button:
       text: 'Read Thesis'
       url: 'https://example.com'
-  - area: MEng Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+
+  - area: M.S. Computational Neuroscience
+    institution: KAIST
+    date_start: 2016-03-01
+    date_end: 2018-02-23
     summary: |
-      GPA: 3.8/4.0
+      GPA: 4.05/4.3
 
       Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
-  - area: BSc Artificial Intelligence
-    institution: Massachusetts Institute of Technology
-    date_start: 2016-01-01
-    date_end: 2020-12-31
+
+  - area: B.S. Mathematical Sciences
+    institution: KAIST
+    date_start: 2011-02-07
+    date_end: 2016-02-19
     summary: |
-      GPA: 3.4/4.0
+      GPA: 3.83/4.3
       
       Courses included:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+
 work:
   - position: Director of Cloud Infrastructure
     company_name: GenCoin
@@ -95,6 +104,7 @@ work:
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
       - lorem ipsum dolor sit amet, consectetur adipiscing elit
+
   - position: Backend Software Engineer
     company_name: X
     company_url: ''
@@ -161,6 +171,7 @@ awards:
     icon: coursera
     summary: |
       I studied the foundational concept of neural networks and deep learning. By the end, I was familiar with the significant technological trends driving the rise of deep learning; build, train, and apply fully connected deep neural networks; implement efficient (vectorized) neural networks; identify key parameters in a neural network’s architecture; and apply deep learning to your own applications.
+
   - title: Blockchain Fundamentals
     url: https://www.edx.org/professional-certificate/uc-berkeleyx-blockchain-fundamentals
     date: '2023-07-01'
@@ -171,6 +182,7 @@ awards:
       - Synthesize your own blockchain solutions
       - Gain an in-depth understanding of the specific mechanics of Bitcoin
       - Understand Bitcoin’s real-life applications and learn how to attack and destroy Bitcoin, Ethereum, smart contracts and Dapps, and alternatives to Bitcoin’s Proof-of-Work consensus algorithm
+
   - title: 'Object-Oriented Programming in R'
     url: https://www.datacamp.com/courses/object-oriented-programming-with-s3-and-r6-in-r
     certificate_url: https://www.datacamp.com
@@ -183,4 +195,4 @@ awards:
 
 ## About Me
 
-Chien Shiung Wu is a professor of artificial intelligence at the Stanford AI Lab. Her research interests include distributed robotics, mobile computing and programmable matter. She leads the Robotic Neurobiology group, which develops self-reconfiguring robots, systems of self-organizing robots, and mobile sensor networks.
+Hi, my name is Hyeonsu Lee. I earned my Ph.D. in Computational Neuroscience from KAIST (’24.08, Advisor: Prof. Se-Bum Paik) and currently joined KIST (Advisor: Dr. Jaeson Jang). I received a B.S. in Mathematical Sciences and an M.S. in Bio and Brain Engineering from KAIST, where I developed a deep interest in understanding how neural activity in small brain circuits can efficiently enable cognitive functions. 
