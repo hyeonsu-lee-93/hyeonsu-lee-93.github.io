@@ -34,23 +34,11 @@ profiles:
     url: 'hyeonsu.lee.93@gmail.com'
     label: E-mail Me
 
-  # - icon: brands/x
-  #   url: https://twitter.com/GetResearchDev
-
-  # - icon: brands/instagram
-  #   url: https://www.instagram.com/
-
-  # - icon: brands/github
-  #   url: https://github.com/gcushen
-
   - icon: academicons/google-scholar
     url: https://scholar.google.co.kr/citations?user=SQJck9IAAAAJ&hl=ko&oi=ao/
 
-      - icon: brands/linkedin
+  - icon: brands/linkedin
     url: https://www.linkedin.com/in/hyeonsu-lee-908544258
-
-  # - icon: academicons/orcid
-  #   url: https://orcid.org/
 
 interests:
   - Computational Neuroscience
