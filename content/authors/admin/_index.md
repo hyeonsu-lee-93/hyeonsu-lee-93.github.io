@@ -131,4 +131,4 @@ awards:
 
 ## About Me
 
-Hi, my name is Hyeonsu Lee. I earned my Ph.D. in Computational Neuroscience from KAIST (’24.08, Advisor: Prof. Se-Bum Paik) and currently joined KIST (Advisor: Dr. Jaeson Jang). I received a B.S. in Mathematical Sciences and an M.S. in Bio and Brain Engineering from KAIST, where I developed a deep interest in understanding how neural activity in small brain circuits can efficiently enable cognitive functions. 
+Hi, my name is Hyeonsu Lee. I earned my Ph.D. in Computational Neuroscience from KAIST (’24.08, Advisor: Prof. Se-Bum Paik) and currently joined KIST (Advisor: Dr. Jaeson Jang). I received a B.S. in Mathematical Sciences and an M.S. in Bio and Brain Engineering from KAIST, where I developed a deep interest in understanding how neural activity in small brain circuits can efficiently enable complex cognitive functions. 
