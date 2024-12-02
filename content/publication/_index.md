@@ -9,4 +9,6 @@ view: citation
 banner:
   caption: ''
   image: ''
+
+sort_by: "weight"
 ---
