@@ -10,5 +10,4 @@ banner:
   caption: ''
   image: ''
 
-sort_by: "weight"
 ---
