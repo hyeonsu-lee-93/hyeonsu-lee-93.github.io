@@ -23,7 +23,7 @@ abstract: The ability to compare quantities of visual objects with two distinct 
 summary: Lee and Choi et al., Cell Reports 2023
 
 tags:
-- Emergent visual functions
+- Emergent Visual Functions
 featured: true
 
 # links:
