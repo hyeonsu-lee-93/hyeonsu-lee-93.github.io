@@ -14,7 +14,7 @@ main:
     identifier: works
     weight: 11
 
-  - name: Selected
+  - name: Featured
     parent: works
     url: /#papers
     weight: 11
@@ -41,12 +41,12 @@ main:
 
   - name: International
     parent: confer
-    url: /#papers
+    url: selected_conferences/
     weight: 12
 
   - name: Domestic
     parent: confer
-    url: /#papers
+    url: selected_conferences/
     weight: 13
 
 
