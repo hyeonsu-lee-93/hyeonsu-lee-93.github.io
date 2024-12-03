@@ -1,7 +1,7 @@
 ---
 title: "Conferences"
 date: 2024-12-03
-type: "page"
+type: "post"
 draft: false
 ---
 

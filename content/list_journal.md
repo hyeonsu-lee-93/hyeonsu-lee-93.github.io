@@ -1,7 +1,7 @@
 ---
 title: "Journal Publications"
 date: 2024-12-03
-type: "page"
+type: "publication"
 draft: false
 ---
 

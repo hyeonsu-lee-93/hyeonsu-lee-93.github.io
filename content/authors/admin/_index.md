@@ -47,7 +47,7 @@ interests:
 
 education:
   - area: Ph.D. Computational Neuroscience
-    institution: KAIST
+    institution: KAIST (Advisor:Se-Bum Paik)
     date_start: 2018-02-26
     date_end: 2024-08-16
     summary: |
@@ -57,7 +57,7 @@ education:
     #   url: 'https://example.com'
 
   - area: M.S. Computational Neuroscience
-    institution: KAIST
+    institution: KAIST (Advisor:Se-Bum Paik)
     date_start: 2016-03-01
     date_end: 2018-02-23
     summary: |

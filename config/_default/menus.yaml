@@ -29,15 +29,15 @@ main:
     url: list_preprint/
     weight: 13
 
-  - name: Patents
-    parent: works
-    url:  list_patent/
-    weight: 14
-
-# Conferences
+  # Conferences
   - name: Conferences
     url: list_conference/
     weight: 20
+
+  # Patent
+  - name: Patents
+    url:  list_patent/
+    weight: 14
 
   # News
   - name: News
