@@ -36,23 +36,23 @@ main:
 
   - name: Selected
     parent: confer
-    url: selected_conferences/
+    url: conference_selected/
     weight: 11
 
   - name: International
     parent: confer
-    url: international_conferences/
+    url: conference_international/
     weight: 12
 
   - name: Domestic
     parent: confer
-    url: selected_conferences/
+    url: conference_domestic/
     weight: 13
 
 
   # Patent
   - name: Patents
-    url:  list_patent/
+    url:  patent/
     weight: 20
 
   # News
