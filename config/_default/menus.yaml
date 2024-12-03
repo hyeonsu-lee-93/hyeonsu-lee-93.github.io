@@ -14,19 +14,19 @@ main:
     identifier: works
     weight: 11
 
-  - name: Featured
+  - name: featured
     parent: works
     url: /#papers
     weight: 11
 
-  - name: Journals
+  - name: journals
     parent: works
-    url: list_journal/
+    url: paper_journal/
     weight: 12
 
-  - name: Preprints
+  - name: pre-prints
     parent: works
-    url: list_preprint/
+    url: paper_preprint/
     weight: 13
 
   # Conferences
@@ -34,17 +34,17 @@ main:
     identifier: confer
     weight: 15
 
-  - name: Selected
+  - name: selected
     parent: confer
     url: conference_selected/
     weight: 11
 
-  - name: International
+  - name: international
     parent: confer
     url: conference_international/
     weight: 12
 
-  - name: Domestic
+  - name: domestic
     parent: confer
     url: conference_domestic/
     weight: 13

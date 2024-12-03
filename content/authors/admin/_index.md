@@ -83,23 +83,27 @@ work:
 # Skills
 # Add your own SVG icons to `assets/media/icons/`
 skills:
-  - name: Technical Skills
+  - name: RESEARCH SKILLS
     items:
-      - name: MATLAB
-        description: ''
-        percent: 90
+      - name: NEURAL NETWORK MODELING
         icon: code-bracket
-        #
-      - name: Data Science
-        description: ''
-        percent: 100
+      - name: NEURAL DATA ANALYSIS
+        icon: code-bracket
+      - name: HUMAN BEHAVIORAL EXPERIMENT
         icon: chart-bar
 
-languages:
-  - name: Korean (native)
-    percent: 100
-  - name: English
-    percent: 75
+  - name: TOOLS
+    items:
+      - name: MATLAB
+        icon: code-bracket
+      - name: Illustrator
+        icon: code-bracket
+
+# languages:
+#   - name: Korean (native)
+#     percent: 100
+#   - name: English
+#     percent: 75
 
 # Awards.
 #   Add/remove as many awards below as you like.
