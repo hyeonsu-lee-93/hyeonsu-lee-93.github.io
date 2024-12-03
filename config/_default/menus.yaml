@@ -4,10 +4,12 @@
   #   The weight parameter defines the order that the links will appear in.
 
 main:
+  # Bio
   - name: Bio
     url: /
     weight: 10
 
+  # Publications & sub-menu
   - name: Publications
     identifier: works
     weight: 11
@@ -19,36 +21,35 @@ main:
 
   - name: Journals
     parent: works
-    url: projects/
+    url: list_journal/
     weight: 12
 
-  - name: Pre-prints
+  - name: Preprints
     parent: works
-    url: /#news
+    url: list_preprint/
     weight: 13
 
   - name: Patents
     parent: works
-    url:  projects/
+    url:  list_patent/
     weight: 14
 
-  # - name: Publications
-  #   url: /#papers
-  #   weight: 11
-
-  - name: TEST
-    url: projects/
-    weight: 12
-
-  - name: News
-    url: /#news
-    weight: 13
-
-  - name: Experiences
-    url: experience/
+# Conferences
+  - name: Conferences
+    url: list_conference/
     weight: 20
 
+  # News
+  - name: News
+    url: /#news
+    weight: 30
 
+  # Experience
+  - name: Experiences
+    url: experience/
+    weight: 40
+
+  ##############################################
   # - name: Bio
   #   url: /
   #   weight: 10
