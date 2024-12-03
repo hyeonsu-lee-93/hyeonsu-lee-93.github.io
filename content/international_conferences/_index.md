@@ -8,7 +8,7 @@ cms_exclude: true
 
 ## International Conferences
 
-<ul style="font-size: 0.8em; color: black; color-scheme: light dark;">
+<ul style="font-size: 0.8em; color: black;">
   <li>Society for Neuroscience (<strong>SfN</strong>) 2023, <strong>Lee H*</strong> & Paik SB,<br>  
     "Emergence of aesthetic preferences in untrained deep neural networks"</li>
 
@@ -22,10 +22,10 @@ cms_exclude: true
     color: black;
   }
 
-  /* dark mode일 때 흰색으로 변경 */
+  /* dark mode일 때 텍스트 색상을 흰색으로 변경 */
   @media (prefers-color-scheme: dark) {
     ul {
-      color: white;
+      color: white !important;
     }
   }
 </style>
