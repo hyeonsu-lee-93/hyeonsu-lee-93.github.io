@@ -42,8 +42,8 @@ profiles:
 
 interests:
   - Computational Neuroscience
-  - Mathematical modelling
-  - Neural data analysis
+  - Mathematical Modelling
+  - Neural Data Analysis
 
 education:
   - area: Ph.D. Computational Neuroscience
@@ -51,10 +51,6 @@ education:
     date_start: 2018-02-26
     date_end: 2024-08-16
     summary: |
-
-    # button:
-    #   text: 'Read Thesis'
-    #   url: 'https://example.com'
 
   - area: M.S. Computational Neuroscience
     institution: KAIST
@@ -71,6 +67,14 @@ education:
       GPA: 3.83/4.3 (Cum Laude)
       
 work:
+  - position: Postdoctoral Researcher
+    company_name: KIST
+    company_url: 'https://www.kist.re.kr/eng/index.do/'
+    company_logo: ''
+    date_start: 2024-10-01
+    date_end: Present
+    summary: |2-
+
   - position: Researcher
     company_name: YBrain
     company_url: 'https://www.ybrain.com/'
@@ -99,12 +103,6 @@ skills:
       - name: Illustrator
         icon: code-bracket
 
-# languages:
-#   - name: Korean (native)
-#     percent: 100
-#   - name: English
-#     percent: 75
-
 # Awards.
 #   Add/remove as many awards below as you like.
 #   Only `title`, `awarder`, and `date` are required.
@@ -114,7 +112,7 @@ awards:
     url: 
     date: '2017-08-31'
     awarder: Korean Society for Brain and Neural Sciences (KSBNS)
-    icon: c
+    icon:
     summary: |
 
   - title: Poster Presentation Awards

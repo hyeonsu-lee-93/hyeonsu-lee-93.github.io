@@ -13,7 +13,7 @@ cms_exclude: true
   <li>Society for Neuroscience (<strong>SfN</strong>) 2018, <strong>Lee H</strong>, Choi W, Park Y & Paik SB,<br>  
     <strong>Resource overwrite model for sequential working memory in human” (Oral)</strong></li>
 
-  <li>3	Korean Society for Brain and Neural Sciences (<strong>KSBNS</strong>) 2017, <strong>Lee H</strong>, Choi W & Paik SB,<br>  
+  <li>Korean Society for Brain and Neural Sciences (<strong>KSBNS</strong>) 2017, <strong>Lee H</strong>, Choi W & Paik SB,<br>  
     <strong>“Working memory pre-allocation improves the performance of sequential memory task” (Best Presentation Award)</strong></li>
 </ol>
 
