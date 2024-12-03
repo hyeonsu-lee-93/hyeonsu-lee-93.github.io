@@ -93,12 +93,14 @@ skills:
         icon: code-bracket
       - name: NEURAL DATA ANALYSIS
         icon: code-bracket
-      - name: HUMAN BEHAVIORAL EXPERIMENT
+      - name: PSYCHOPHYSICS
         icon: chart-bar
 
   - name: TOOLS
     items:
       - name: MATLAB
+        icon: code-bracket
+      - name: EYELINK
         icon: code-bracket
       - name: Illustrator
         icon: code-bracket
@@ -122,7 +124,7 @@ awards:
     icon: 
     summary: |
 
-  - title: Best TA awards
+  - title: Best TA Awards
     url: 
     date: '2018-08-29'
     awarder: Bio and Brain Engineering, KAIST
