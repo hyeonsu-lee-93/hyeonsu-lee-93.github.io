@@ -12,7 +12,7 @@ tags:
   - Position
 
 image:
-  caption: 'Image credit: [**My dorm!**]'
+  caption: 'Image credit: Hyeonsu Lee'
 
 ---
 
