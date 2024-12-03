@@ -7,13 +7,14 @@ cms_exclude: true
 view: citation
 ---
 
-## Internation Conferences
+<ul style="font-size: 0.7em;">
+  <li><strong>Society for Neuroscience (**SfN**) 2022</strong>, <em>Lee H*</em> & Paik SB,  
+    "Emergence of aesthetic preferences in untrained deep neural networks"</li>
 
-- Society for Neuroscience (**SfN**) 2022, __Lee H\*__ & Paik SB,  
-"Emergence of aesthetic preferences in untrained deep neural networks"  
+  <li><strong>Society for Neuroscience (**SfN**) 2023</strong>, Kim G, Kang M, <em>Lee H*</em>, Park Y, Song M & Paik SB,  
+    “Random imitation as an efficient survival strategy in multi-agent systems”</li>
+</ul>
 
-- Society for Neuroscience (**SfN**) 2023, Kim G, Kang M, __Lee H\*__, Park Y, Song M & Paik SB,  
-“Random imitation as an efficient survival strategy in multi-agent systems”
 
 
    
