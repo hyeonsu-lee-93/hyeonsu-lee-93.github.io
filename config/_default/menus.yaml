@@ -31,13 +31,29 @@ main:
 
   # Conferences
   - name: Conferences
-    url: list_conference/
-    weight: 20
+    identifier: confer
+    weight: 15
+
+  - name: Selected
+    parent: confer
+    url: /#papers
+    weight: 11
+
+  - name: International
+    parent: confer
+    url: /#papers
+    weight: 12
+
+  - name: Domestic
+    parent: confer
+    url: /#papers
+    weight: 13
+
 
   # Patent
   - name: Patents
     url:  list_patent/
-    weight: 14
+    weight: 20
 
   # News
   - name: News
