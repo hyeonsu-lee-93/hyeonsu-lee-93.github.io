@@ -46,28 +46,33 @@ interests:
   - Neural Data Analysis
 
 education:
-  - area: Ph.D. Computational Neuroscience
+  - area: Ph.D. Bio and Brain Engineering
     institution: KAIST
     date_start: 2018-02-26
     date_end: 2024-08-16
     summary: |
       - Advisor: Prof. Se-Bum Paik
       - Thesis: "A model study of the emergent quantity comparison ability from the combined single neuron activity"
+      - My primary research focused on understanding how the ability to compare visual quantities can arise spontaneously, without any learning.
+      - GPA: 4.03/4.3
 
-  - area: M.S. Computational Neuroscience
+  - area: M.S. Bio and Brain Engineering
     institution: KAIST
     date_start: 2016-03-01
     date_end: 2018-02-23
     summary: |
       - Advisor: Prof. Se-Bum Paik
       - Thesis: "A study on the effects of sequential overwrite and non-uniform allocation of memory resource in working memory performance"
+      - My research primarily focused on exploring how humans encode sequential information through mathematical model.
       - GPA: 4.05/4.3
 
   - area: B.S. Mathematical Sciences
-    institution: KAIST
+    institution: Korea Advanced Institute of Science and Technology (KAIST)
     date_start: 2011-02-07
     date_end: 2016-02-19
     summary: |
+      - Experiences in Germany (TUM) as an exchange student leds me to mathematical approaches for biology
+      - "Computational Neuroscience" was the most impressive course I ever took, thus I move to Bio and Brain Engineering
       - GPA: 3.83/4.3 (Cum Laude)
       
 work:
@@ -96,18 +101,18 @@ skills:
       - name: NEURAL NETWORK MODELING
         icon: code-bracket
       - name: NEURAL DATA ANALYSIS
-        icon: code-bracket
+        icon: hero/presentation-chart-bar
       - name: PSYCHOPHYSICS
-        icon: chart-bar
+        icon: hero/user-group
 
   - name: TOOLS
     items:
       - name: MATLAB
-        icon: code-bracket
+        icon: devicon/matlab
       - name: EYELINK
-        icon: code-bracket
+        icon: hero/eye
       - name: Illustrator
-        icon: code-bracket
+        icon: devicon/illustrator
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -139,4 +144,6 @@ awards:
 
 ## About Me
 
-Hi, my name is Hyeonsu Lee. I earned my Ph.D. in Computational Neuroscience from KAIST (’24.08, Advisor: Prof. Se-Bum Paik) and currently joined KIST (Advisor: Dr. Jaeson Jang). I received a B.S. in Mathematical Sciences and an M.S. in Bio and Brain Engineering from KAIST, where I developed a deep interest in understanding how neural activity in small brain circuits can efficiently enable complex cognitive functions. 
+Hi, my name is Hyeonsu Lee. I earned my Ph.D. in **Computational Neuroscience** from KAIST (’24.08, Advisor: Prof. Se-Bum Paik) and am currently continuing my research at KIST (Advisor: Dr. Jaeson Jang). I hold a B.S. in Mathematical Sciences and an M.S. in Bio and Brain Engineering from KAIST, where I developed a deep interest in understanding **how neural activity within small brain circuits can efficiently enable complex cognitive functions**. <br>
+
+* **"I am currently seeking a postdoctoral position in the U.S., starting in 2025"**
