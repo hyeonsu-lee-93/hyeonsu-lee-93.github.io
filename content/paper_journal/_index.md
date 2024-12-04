@@ -22,7 +22,7 @@ cms_exclude: true
   <li>Jeong M*, <strong>Lee H*</strong>,..., Paik SB†, Lim BK† & Kim D†, <strong>eNeuro</strong> (2021),<br>  
     <strong>“Interhemispheric cortico-cortical pathway for sequential bimanual movements in mice”</strong></li>
 
-  <li>Bae JW, ,…, <strong>Lee H</strong>, Paik SB & Jung MW, <strong>Nature Communications</strong> (2021),<br>  
+  <li>Bae JW,…, <strong>Lee H</strong>, Paik SB & Jung MW, <strong>Nature Communications</strong> (2021),<br>  
     <strong>“Parallel processing of working memory and temporal information by distinct types of cortical projection neurons”</strong></li>
 
   <li>Song M*, Kang MS*, <strong>Lee H</strong>, Jeong Y† & Paik SB†, <strong>Scientific Reports</strong> (2018),<br>  
