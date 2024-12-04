@@ -6,7 +6,7 @@ authors:
 - Dongil Lee
 - Se-Bum Paik
 
-date: '2023-08-29'
+date: '2023-07-29'
 
 publishDate: '2024-12-02T08:13:29.605983Z'
 
@@ -29,7 +29,7 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://www.cell.com/cell-reports/fulltext/S2211-1247(23)00911-7
+url_pdf: https://doi.org/10.1016/j.celrep.2023.112900
 url_code: 'https://github.com/hyeonsu-lee-93/Comparison'
 url_dataset: ''
 url_poster: ''

@@ -51,20 +51,24 @@ education:
     date_start: 2018-02-26
     date_end: 2024-08-16
     summary: |
+      - Advisor: Prof. Se-Bum Paik
+      - Thesis: "A model study of the emergent quantity comparison ability from the combined single neuron activity"
 
   - area: M.S. Computational Neuroscience
     institution: KAIST
     date_start: 2016-03-01
     date_end: 2018-02-23
     summary: |
-      GPA: 4.05/4.3
+      - Advisor: Prof. Se-Bum Paik
+      - Thesis: "A study on the effects of sequential overwrite and non-uniform allocation of memory resource in working memory performance"
+      - GPA: 4.05/4.3
 
   - area: B.S. Mathematical Sciences
     institution: KAIST
     date_start: 2011-02-07
     date_end: 2016-02-19
     summary: |
-      GPA: 3.83/4.3 (Cum Laude)
+      - GPA: 3.83/4.3 (Cum Laude)
       
 work:
   - position: Postdoctoral Researcher

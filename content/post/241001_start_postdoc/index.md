@@ -16,3 +16,5 @@ image:
 
 ---
 
+I am excited to continue my research journey in a new place—KIST! <br>
+I am deeply grateful to Dr. Jaeson Jang, my former colleague during my MS and PhD years, for providing me with this opportunity to gain new experiences. Together, we aim to explore the emergence of cognitive functions and intriguing social behaviors in animal and human groups.

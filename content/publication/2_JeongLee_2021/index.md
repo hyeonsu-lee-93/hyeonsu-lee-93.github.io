@@ -33,7 +33,7 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://www.eneuro.org/content/8/4/ENEURO.0200-21.2021.abstract
+url_pdf: https://doi.org/10.1523/ENEURO.0200-21.2021
 url_code: ''
 url_dataset: ''
 url_poster: ''

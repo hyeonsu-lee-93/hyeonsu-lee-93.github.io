@@ -30,7 +30,7 @@ featured: true
 # links:
 # - name: ""
 #   url: ""
-url_pdf: https://www.sciencedirect.com/science/article/pii/S0893608019303168
+url_pdf: https://doi.org/10.1016/j.neunet.2019.09.034
 url_code: ''
 url_dataset: ''
 url_poster: ''

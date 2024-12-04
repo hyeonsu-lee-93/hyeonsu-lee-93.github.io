@@ -7,11 +7,30 @@ cms_exclude: true
 ## Domestic Conferences
 
 <ol style="font-size: 0.8em;">
+  <!-- 2018 -->
   <li>Korean Society for Cognitive Science Meeting (<strong>KSCS</strong>) 2018, <strong>Lee H</strong>, Choi W, Park Y & Paik SB,<br>  
-    <strong>"Sequential overwrite model can explain the serial-position effects in working memory"</strong></li>
+    <strong>“Sequential overwrite model can explain the serial-position effects in working memory”</strong></li>
 
   <li>Korean Physical Society Meeting (<strong>KPS</strong>) 2018, <strong>Lee H</strong>, Choi W, Park Y & Paik SB,<br>  
-    <strong>"A theory of resource allocation for sequential memory in human"</strong></li>
+    <strong>“A theory of resource allocation for sequential memory in human”</strong></li>
 
+  <!-- 2017 -->
+  <li>Annual Korean Society for Computational Neuroscience Meeting (<strong>cbrain</strong>) 2017, <strong>Lee H</strong>, Choi W & Paik SB,<br>  
+    <strong>“Working memory resource allocation improves the sequential memory performance”</strong></li>
+
+  <li>Korean Physical Society Meeting (<strong>KPS</strong>) 2017, <strong>Lee H</strong>, Choi W & Paik SB,<br>  
+    <strong>“A comparative study on simultaneous versus sequential presentation of stimuli for working memory performance”</strong></li>
+
+  <!-- 2016 -->
+  <li>Korean Physical Society Meeting (<strong>KPS</strong>) 2016, Song M, <strong>Lee H</strong> & Paik SB,<br>  
+    <strong>“Computational Classification of Neural Network Activity Patterns for Imaging Data”</strong></li>
+
+  <!-- 2015 -->
+  <li>Annual Korean Society for Computational Neuroscience Meeting (<strong>cbrain</strong>) 2015, <strong>Lee H*</strong>, Song M* & Paik SB,<br>  
+    <strong>“Classification of the Neural Activity Patterns by Spatio-Temporal Correlation Index”</strong></li>
+
+  <li>Korean Physical Society Meeting (<strong>KPS</strong>) 2015, <strong>Lee H</strong>, Jang J & Paik SB,<br>  
+    <strong>“A Biologically Inspired Adaptive Model for Efficient Image Compression”</strong></li>
+    
 </ol>
 
