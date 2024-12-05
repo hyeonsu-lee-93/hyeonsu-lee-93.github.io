@@ -14,7 +14,7 @@ cms_exclude: true
   <li>Society for Neuroscience (<strong>SfN</strong>) 2023, Kim G, Kang M, <strong>Lee H</strong>,... & Paik SB,<br>
     <strong>“Random imitation as an efficient survival strategy in multi-agent systems”</strong></li>
 
-  <li>Korean Society for Brain and Neural Sci. (<strong>KSBNS</strong>) 2023, Kang M, Kim G, <strong>Lee H</strong>,... & Paik SB,<br>  
+  <li>Korean Society for Brain and Neural Sci. (<strong>KSBNS</strong>) 2023, Kang M,... <strong>Lee H</strong>,... & Paik SB,<br>  
     <strong>“Random imitation as an evolutionary strategy in a multi-agent system”</strong></li>
 
   <!-- 2022 -->
@@ -24,10 +24,10 @@ cms_exclude: true
   <li>Society for Neuroscience (<strong>SfN</strong>) 2022, Kang M, <strong>Lee H</strong>, Park Y, Song M & Paik SB,<br>  
     <strong>“Random imitation for evolution in multi-agent systems”</strong></li>
 
-  <li>Computational Neuroscience Meeting (<strong>CNS</strong>) 2022, <strong>Lee H*</strong>, Choi W*, Lee D & Paik SB,<br>  
+  <li>Computational Neuroscience Meeting (<strong>CNS</strong>) 2022, <strong>Lee H*</strong>, Choi W*,... & Paik SB,<br>  
     <strong>“Comparison of visual quantities in untrained deep neural networks”</strong></li>
 
-  <li>Korean Society for Brain and Neural Sci. (<strong>KSBNS</strong>) 2022, <strong>Lee H*</strong>, Choi W*, Lee D & Paik SB,<br>  
+  <li>Korean Society for Brain and Neural Sci. (<strong>KSBNS</strong>) 2022, <strong>Lee H*</strong>,... & Paik SB,<br>  
     <strong>“Visual quantity comparison in untrained deep neural networks”</strong></li>
 
   <!-- 2021 -->
@@ -46,14 +46,14 @@ cms_exclude: true
     <strong>“Neuronal ensemble encoding bimanual motor coordination in mice”</strong></li>
 
   <!-- 2018 -->
-  <li>Computational Neuroscience Meeting (<strong>CNS</strong>) 2018, <strong>Lee H</strong>, Choi W, Park Y & Paik SB,<br>  
+  <li>Computational Neuroscience Meeting (<strong>CNS</strong>) 2018, <strong>Lee H</strong>, Choi W,... & Paik SB,<br>  
     <strong>“A dynamic resource model for sequential working memory”</strong></li>
 
   <!-- 2017 -->
   <li>Society for Neuroscience (<strong>SfN</strong>) 2017, <strong>Lee H*</strong>, Park Y* & Paik SB,<br>  
     <strong>“Pre-allocation of memory resources improves working memory performance in a sequential memory task”</strong></li>
 
-  <li>Annual Computational Neuroscience Meeting (<strong>CNS</strong>) 2017, <strong>Lee H</strong>, Choi W & Paik SB,<br>  
+  <li>Computational Neuroscience Meeting (<strong>CNS</strong>) 2017, <strong>Lee H</strong>, Choi W & Paik SB,<br>  
     <strong>“Pre-allocation of working memory modulates memory performance”</strong></li>
 
   <!-- 2016 -->
