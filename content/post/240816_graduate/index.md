@@ -1,7 +1,7 @@
 ---
-title: 🎓 Earned Ph.D. degree in Computational Neuroscience
+title: 🎓 Earned Ph.D. in Computational Neuroscience
 
-summary: I finished my first journey to become a Ph.D.! 
+summary: I have completed my Ph.D. journey!
 
 date: 2024-08-16
 

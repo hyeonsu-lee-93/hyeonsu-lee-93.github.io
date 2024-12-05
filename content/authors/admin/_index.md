@@ -63,7 +63,7 @@ education:
     summary: |
       - Advisor: Prof. Se-Bum Paik
       - Thesis: "A study on the effects of sequential overwrite and non-uniform allocation of memory resource in working memory performance"
-      - My research primarily focused on exploring how humans encode sequential information through mathematical model.
+      - My research primarily focused on exploring how humans encode sequential information in working memory.
       - GPA: 4.05/4.3
 
   - area: B.S. Mathematical Sciences
@@ -71,13 +71,13 @@ education:
     date_start: 2011-02-07
     date_end: 2016-02-19
     summary: |
-      - Experiences in Germany (TUM) as an exchange student leds me to mathematical approaches for biology
-      - "Computational Neuroscience" was the most impressive course I ever took, thus I move to Bio and Brain Engineering
+      - The exchange program in Germany (TUM) played a pivotal role in shaping my interest in mathematical approaches to biology.
+      - "Computational Neuroscience" was the most impressive course I ever took, thus I move to Bio and Brain Engineering.
       - GPA: 3.83/4.3 (Cum Laude)
       
 work:
   - position: Postdoctoral Researcher
-    company_name: KIST
+    company_name: Korea Institute of Science and Technology (KIST)
     company_url: 'https://www.kist.re.kr/eng/index.do/'
     company_logo: ''
     date_start: 2024-10-01
@@ -108,11 +108,11 @@ skills:
   - name: TOOLS
     items:
       - name: MATLAB
-        icon: devicon/matlab
+        icon: code-bracket
       - name: EYELINK
         icon: hero/eye
       - name: Illustrator
-        icon: devicon/illustrator
+        icon: hero/cursor-arrow-rays
 
 # Awards.
 #   Add/remove as many awards below as you like.
@@ -144,6 +144,6 @@ awards:
 
 ## About Me
 
-Hi, my name is Hyeonsu Lee. I earned my Ph.D. in **Computational Neuroscience** from KAIST (’24.08, Advisor: Prof. Se-Bum Paik) and am currently continuing my research at KIST (Advisor: Dr. Jaeson Jang). I hold a B.S. in Mathematical Sciences and an M.S. in Bio and Brain Engineering from KAIST, where I developed a deep interest in understanding **how neural activity within small brain circuits can efficiently enable complex cognitive functions**. <br>
+Hi, my name is Hyeonsu Lee. I earned my Ph.D. in **Computational Neuroscience** from KAIST (’24.08, Advisor: Prof. [Se-Bum Paik](https://scholar.google.co.kr/citations?user=VQK2PP0AAAAJ&hl=ko&oi=ao)) and am currently continuing my research at KIST (Advisor: Dr. [Jaeson Jang](https://scholar.google.co.kr/citations?user=2f7KAdQAAAAJ&hl=ko&oi=ao)). I hold a B.S. in Mathematical Sciences and an M.S. in Bio and Brain Engineering from KAIST, where I developed a deep interest in understanding **how neural activity within small brain circuits can efficiently enable complex cognitive functions**. <br>
 
-* **"I am currently seeking a postdoctoral position in the U.S., starting in 2025"**
+<span style="color: blue;">**"I am currently seeking a postdoctoral position in the U.S., starting in 2025"**</span>

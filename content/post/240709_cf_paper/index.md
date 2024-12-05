@@ -12,7 +12,7 @@ tags:
   - Academic
 
 image:
-  caption: ''
+  caption: 'Image credit: arXiv'
 
 ---
 

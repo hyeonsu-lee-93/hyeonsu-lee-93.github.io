@@ -1,7 +1,7 @@
 ---
 title: 🧠 Start as a post-doc in KIST
 
-summary: I joined Jang Lab in KIST. Really thrilled to start in new place! 
+summary: I joined Jang Lab at KIST. Really thrilled to begin this new chapter in a new place!
 
 date: 2024-10-01
 
