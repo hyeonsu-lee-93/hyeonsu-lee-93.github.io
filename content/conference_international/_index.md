@@ -14,7 +14,7 @@ cms_exclude: true
   <li>Society for Neuroscience (<strong>SfN</strong>) 2023, Kim G, Kang M, <strong>Lee H</strong>,... & Paik SB,<br>
     <strong>“Random imitation as an efficient survival strategy in multi-agent systems”</strong></li>
 
-  <li>Korean Society for Brain and Neural Sci. (<strong>KSBNS</strong>) 2023, Kang M,... <strong>Lee H</strong>,... & Paik SB,<br>  
+  <li>Korean Society for Brain and Neural Sci. (<strong>KSBNS</strong>) 2023,<br> Kang M, Kim G,... <strong>Lee H</strong>,... & Paik SB,<br>  
     <strong>“Random imitation as an evolutionary strategy in a multi-agent system”</strong></li>
 
   <!-- 2022 -->
