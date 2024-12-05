@@ -35,7 +35,7 @@ cms_exclude: true
     <strong>“Visual proportion sense in untrained deep neural networks”</strong></li>
 
   <!-- 2020 -->
-  <li>Korean Society for Brain and Neural Sci. (<strong>KSBNS</strong>) 2020, Bae JW, …, <strong>Lee H</strong>, Paik SB & Jung MW,<br>  
+  <li>Korean Society for Brain and Neural Sci. (<strong>KSBNS</strong>) 2020, Bae JW,…, <strong>Lee H</strong>, Paik SB & Jung MW,<br>  
     <strong>“Distinct types of cortical projection neurons for working memory and timing”</strong></li>
 
   <li>Computational Neuroscience Meeting (<strong>CNS</strong>) 2020, Choi W, <strong>Lee H</strong> & Paik SB,<br>  
