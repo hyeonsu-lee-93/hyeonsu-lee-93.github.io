@@ -146,4 +146,6 @@ awards:
 
 Hi, my name is Hyeonsu Lee. I earned my Ph.D. in **Computational Neuroscience** from KAIST (’24.08, Advisor: Prof. [Se-Bum Paik](https://scholar.google.co.kr/citations?user=VQK2PP0AAAAJ&hl=ko&oi=ao)) and am currently continuing my research at KIST (Advisor: Dr. [Jaeson Jang](https://scholar.google.co.kr/citations?user=2f7KAdQAAAAJ&hl=ko&oi=ao)). I hold a B.S. in Mathematical Sciences and an M.S. in Bio and Brain Engineering from KAIST, where I developed a deep interest in understanding **how neural activity within small brain circuits can efficiently enable complex cognitive functions**. <br>
 
-**"<u>I am currently seeking a postdoctoral position in the U.S., starting in 2025</u>"**
+**"<u>I am currently seeking a postdoctoral position in the U.S., starting in 2025</u>"** <br>
+
+email: hyeonsu.lee@kist.re.kr / hyeonsu.lee.93@gmail.com / (hslee9305@kaist.ac.kr)
