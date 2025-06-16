@@ -12,6 +12,10 @@ cms_exclude: true
 
   <li><strong>Lee H</strong>, Choi W, Park Y & Paik SB, <strong>Neural Networks</strong> (2020),<br>  
     <strong><a href="https://doi.org/10.1016/j.neunet.2019.09.034" target="_blank">“Distinct role of flexible and stable encodings in sequential working memory”</a></strong></li>
+
+  <li>Cho S, <strong>Lee H</strong>, Baek S & Paik SB, <strong>Neural Networks</strong> (2025),<br>  
+    <strong><a href="https://doi.org/10.1016/j.neunet.2025.107762" target="_blank">“Neuromimetic metaplasticity for adaptive continual learning without catastrophic forgetting”</a></strong></li>
+
 </ul>
 
 
