@@ -54,7 +54,6 @@ education:
       - Advisor: Prof. Se-Bum Paik
       - Thesis: "A model study of the emergent quantity comparison ability from the combined single neuron activity"
       - My primary research focused on understanding how the ability to compare visual quantities can arise spontaneously, without any learning.
-      - GPA: 4.03/4.3
 
   - area: M.S. Bio and Brain Engineering
     institution: KAIST
@@ -64,7 +63,6 @@ education:
       - Advisor: Prof. Se-Bum Paik
       - Thesis: "A study on the effects of sequential overwrite and non-uniform allocation of memory resource in working memory performance"
       - My research primarily focused on exploring how humans encode sequential information in working memory.
-      - GPA: 4.05/4.3
 
   - area: B.S. Mathematical Sciences
     institution: Korea Advanced Institute of Science and Technology (KAIST)
@@ -145,7 +143,5 @@ awards:
 ## About Me
 
 Hi, my name is Hyeonsu Lee. I earned my Ph.D. in **Computational Neuroscience** from KAIST (’24.08, Advisor: Prof. [Se-Bum Paik](https://scholar.google.co.kr/citations?user=VQK2PP0AAAAJ&hl=ko&oi=ao)) and am currently continuing my research at KIST (Advisor: Dr. [Jaeson Jang](https://scholar.google.co.kr/citations?user=2f7KAdQAAAAJ&hl=ko&oi=ao)). I hold a B.S. in Mathematical Sciences and an M.S. in Bio and Brain Engineering from KAIST, where I developed a deep interest in understanding **how neural activity within small brain circuits can efficiently enable complex cognitive functions**. <br>
-
-**"<u>I am currently seeking a postdoctoral position in the U.S., starting in 2025</u>"** <br>
 
 email: hyeonsu.lee@kist.re.kr / hyeonsu.lee.93@gmail.com / (hslee9305@kaist.ac.kr)
