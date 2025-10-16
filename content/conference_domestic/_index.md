@@ -7,6 +7,10 @@ cms_exclude: true
 ## Domestic Conferences
 
 <ol style="font-size: 0.8em;">
+  <!-- 2025 -->
+  <li>Korean Society for Computational Neuroscience Meeting (<strong>cbrain</strong>) 2025,<br> <strong>Lee H</strong>, Baek S, Jang J & Paik SB,<br>  
+    <strong>“Emergent cycles in social behavior from stochastic individuals”</strong></li>
+
   <!-- 2018 -->
   <li>Korean Society for Cognitive Sci. (<strong>KSCS</strong>) 2018, <strong>Lee H</strong>, Choi W, Park Y & Paik SB,<br>  
     <strong>“Sequential overwrite model can explain the serial-position effects in working memory”</strong></li>

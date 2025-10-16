@@ -7,6 +7,9 @@ cms_exclude: true
 ## Selected Conferences
 
 <ol style="font-size: 0.8em;">
+  <li>Korean Society for Brain and Neural Sci. (<strong>KSBNS</strong>) 2025, <strong>Lee H</strong>, Baek S, Jang J & Paik SB,<br>  
+    <strong>"Spontaneous social change driven by stochastic individual behavior"</strong></li>
+  
   <li>Computational and Systems Neurosci. (<strong>Cosyne</strong>) 2022, Choi W*, <strong>Lee H*</strong> & Paik SB,<br>  
     <strong>"Spontaneous emergence of magnitude comparison units in untrained deep neural networks"</strong></li>
 
