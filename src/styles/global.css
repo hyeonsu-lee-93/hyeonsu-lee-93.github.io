@@ -5,7 +5,7 @@
   --line: #e3e4e8;
   --accent: #0b6e6e;
   --accent-soft: #e6f2f2;
-  --max: 760px;
+  --max: 880px;
 }
 
 @media (prefers-color-scheme: dark) {
