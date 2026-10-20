@@ -18,6 +18,7 @@ GitHub Pages로 배포된다.
 | CV PDF 교체 | `public/cv.pdf` 덮어쓰기 |
 | 사진 교체 | `public/avatar.jpg` 덮어쓰기 |
 | 색·글꼴·여백 | `src/styles/global.css` |
+| 구글 애널리틱스 ID | `src/layouts/Base.astro`의 `GA_ID` (실제 사이트에서만 동작) |
 
 ### News 파일 예시
 

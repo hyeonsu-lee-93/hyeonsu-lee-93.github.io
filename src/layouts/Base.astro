@@ -9,6 +9,9 @@ interface Props {
 const { title, description } = Astro.props;
 const me = (await getEntry('profile', 'me'))!.data;
 const fullTitle = title ? `${title} | ${me.name}` : me.name;
+// Google Analytics (GA4). Loaded only on the built site, not in `npm run dev`.
+const GA_ID = 'G-B6CYVDTBRH';
+const useAnalytics = import.meta.env.PROD && GA_ID;
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const nav = [
   { href: '/', label: 'Home' },
@@ -24,6 +27,18 @@ const nav = [
     <title>{fullTitle}</title>
     <meta name="description" content={description ?? me.tagline ?? ''} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    {useAnalytics && (
+      <>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${GA_ID}`}></script>
+        <script
+          is:inline
+          set:html={`window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', '${GA_ID}');`}
+        />
+      </>
+    )}
   </head>
   <body>
     <div class="container">
