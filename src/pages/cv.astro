@@ -1,0 +1,131 @@
+---
+import Base from '../layouts/Base.astro';
+import CvPub from '../components/CvPub.astro';
+import { getCollection, getEntry, type CollectionEntry } from 'astro:content';
+import { inlineMd } from '../lib/format';
+
+type Pub = CollectionEntry<'publications'>;
+const inOrder = <T extends { data: { order: number } }>(xs: T[]) => xs.sort((a, b) => a.data.order - b.data.order);
+
+const me = (await getEntry('profile', 'me'))!.data;
+const pubs = inOrder(await getCollection('publications'));
+const newest = (a: Pub, b: Pub) => b.data.year - a.data.year; // stable: keeps file order within a year
+const of = (fn: (p: Pub) => boolean) => pubs.filter(fn).sort(newest);
+
+const groups = [
+  { title: 'Journal Articles', prefix: 'J', items: of((p) => p.data.type === 'journal') },
+  { title: 'Preprints', prefix: 'P', items: of((p) => p.data.type === 'preprint') },
+  { title: 'Selected Conference Presentations', prefix: 'S', items: of((p) => p.data.type === 'conference' && p.data.selected) },
+  { title: 'Patents', prefix: 'PAT', items: of((p) => p.data.type === 'patent') },
+];
+const confGroups = [
+  { title: 'International', prefix: 'C', items: of((p) => p.data.type === 'conference' && !p.data.selected && p.data.scope !== 'domestic') },
+  { title: 'Domestic', prefix: 'D', items: of((p) => p.data.type === 'conference' && !p.data.selected && p.data.scope === 'domestic') },
+];
+// Newest item gets the highest number; the year is shown once per year.
+const rows = (items: Pub[], prefix: string) =>
+  items.map((p, i) => ({
+    p,
+    label: `${prefix}${items.length - i}`,
+    showYear: i === 0 || items[i - 1].data.year !== p.data.year,
+  }));
+
+const yr = (s: string) => (s === 'Present' ? 'present' : s.slice(0, 4));
+const span = (start: string, end: string) => (yr(start) === yr(end) ? yr(start) : `${yr(start)}–${yr(end)}`);
+
+const education = inOrder(await getCollection('education'));
+const experience = inOrder(await getCollection('experience'));
+const awards = inOrder(await getCollection('awards')).sort((a, b) => b.data.year - a.data.year);
+const updated = new Date().toLocaleDateString('en-US', { year: 'numeric', month: 'long' });
+const scholar = me.links.find((l) => l.label === 'Google Scholar');
+---
+<Base title="CV">
+  <article class="cv">
+    <header class="cv-head">
+      <div>
+        <div class="cv-kicker">Curriculum Vitae</div>
+        <h1 class="cv-name">{me.name}, Ph.D.</h1>
+        <div class="cv-contact">
+          {me.role}, {me.affiliation}<br />
+          {me.location && <>{me.location}<br /></>}
+          {me.emails.map((e, i) => <>{i > 0 && ' · '}<a href={`mailto:${e}`}>{e}</a></>)}
+          {scholar && <> · <a href={scholar.url}>Google Scholar</a></>}
+        </div>
+      </div>
+      <a class="cv-download" href="/cv.pdf" download="CV_Hyeonsu_Lee.pdf">
+        <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="currentColor" d="M8 1a.75.75 0 0 1 .75.75v6.69l2.22-2.22a.75.75 0 1 1 1.06 1.06l-3.5 3.5a.75.75 0 0 1-1.06 0l-3.5-3.5a.75.75 0 0 1 1.06-1.06l2.22 2.22V1.75A.75.75 0 0 1 8 1ZM2.75 12.5a.75.75 0 0 0 0 1.5h10.5a.75.75 0 0 0 0-1.5H2.75Z"/></svg>
+        Download PDF
+      </a>
+    </header>
+
+    <section>
+      <h2>Research Interests</h2>
+      <p class="cv-text">{me.interests.join(' · ')}</p>
+    </section>
+
+    <section>
+      <h2>Education</h2>
+      {education.map(({ data: e }) => (
+        <div class="cv-row">
+          <div class="cv-when">{span(e.start, e.end)}</div>
+          <div class="cv-what">
+            <strong>{e.degree} in {e.field}</strong>, {e.institution}{e.country && `, ${e.country}`}
+            {e.advisor && <div class="cv-sub">Advisor: {e.advisor}</div>}
+            {e.extra.map((x) => <div class="cv-sub">{x}</div>)}
+          </div>
+        </div>
+      ))}
+    </section>
+
+    <section>
+      <h2>Research Experience</h2>
+      {experience.map(({ data: e }) => (
+        <div class="cv-row">
+          <div class="cv-when">{span(e.start, e.end)}</div>
+          <div class="cv-what">
+            <strong>{e.position}</strong>, {e.organization}
+            {e.advisor && <span class="muted"> (Advisor: {e.advisor})</span>}
+            {e.bullets.map((b) => <div class="cv-sub" set:html={inlineMd(b)} />)}
+          </div>
+        </div>
+      ))}
+    </section>
+
+    {groups.map((g) => g.items.length > 0 && (
+      <section>
+        <h2>{g.title}</h2>
+        {g.title === 'Journal Articles' && <p class="cv-legend">* equal contribution, † corresponding author</p>}
+        {rows(g.items, g.prefix).map((r) => <CvPub pub={r.p} label={r.label} showYear={r.showYear} />)}
+      </section>
+    ))}
+
+    <section>
+      <h2>Conference Presentations</h2>
+      {confGroups.map((g) => (
+        <>
+          <h3>{g.title}</h3>
+          {rows(g.items, g.prefix).map((r) => <CvPub pub={r.p} label={r.label} showYear={r.showYear} />)}
+        </>
+      ))}
+    </section>
+
+    <section>
+      <h2>Honors and Awards</h2>
+      {awards.map(({ data: a }) => (
+        <div class="cv-row">
+          <div class="cv-when">{a.year}</div>
+          <div class="cv-what"><strong>{a.title}</strong>, {a.awarder}</div>
+        </div>
+      ))}
+    </section>
+
+    {me.skills.length > 0 && (
+      <section>
+        <h2>Skills</h2>
+        {me.skills.map((s) => <p class="cv-text">{s.replace(/,\s*$/, '')}</p>)}
+      </section>
+    )}
+
+    <p class="cv-updated">Last updated: {updated}</p>
+  </article>
+</Base>

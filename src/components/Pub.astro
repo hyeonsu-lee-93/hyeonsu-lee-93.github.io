@@ -1,0 +1,27 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { highlightAuthors } from '../lib/format';
+
+interface Props { pub: CollectionEntry<'publications'> }
+const { data: p } = Astro.props.pub;
+const href = p.doi ? `https://doi.org/${p.doi}` : p.url;
+// Conference venues such as "SfN 2023" already carry the year.
+const meta = p.abbr
+  ? `${p.abbr} ${p.year}`
+  : [p.venue, p.number].filter(Boolean).join(', ') + ` (${p.year})`;
+---
+<li>
+  <span class="ptitle">
+    {href ? <a href={href} target="_blank" rel="noopener">{p.title}</a> : p.title}
+    {p.note && <span class="muted"> {p.note}</span>}
+  </span>
+  <span class="pmeta">
+    <Fragment set:html={highlightAuthors(p.authors) + '. '} /><em>{meta}</em>
+  </span>
+  {p.korean && <span class="pkorean">{p.korean}</span>}
+  {p.code && (
+    <span class="plinks">
+      <a href={p.code} target="_blank" rel="noopener">Code</a>
+    </span>
+  )}
+</li>

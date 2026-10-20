@@ -1,0 +1,41 @@
+---
+import Base from '../layouts/Base.astro';
+import Pub from '../components/Pub.astro';
+import { getCollection, render } from 'astro:content';
+
+const topics = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
+const pubs = await getCollection('publications');
+const byId = new Map(pubs.map((p) => [p.id, p]));
+const rendered = await Promise.all(topics.map(async (t) => ({ ...t, Content: (await render(t)).Content })));
+---
+<Base title="Research">
+  <h1>Research</h1>
+  <p class="muted">
+    I study how cognitive functions emerge from the activity of small neural circuits, using mathematical modelling,
+    neural network simulation and neural data analysis.
+  </p>
+
+  {rendered.map((t) => (
+    <section class="topic">
+      <h2>{t.data.title}{t.data.period && <span class="period">{t.data.period}</span>}</h2>
+      <div class="body"><t.Content /></div>
+      {t.data.papers.length > 0 && (
+        <div class="reps">
+          <h3>Representative work</h3>
+          <ul class="pubs">
+            {t.data.papers.map((id) => {
+              const p = byId.get(id);
+              return p ? <Pub pub={p} /> : <li class="muted">Unknown publication id: {id}</li>;
+            })}
+          </ul>
+        </div>
+      )}
+      {t.data.image && (
+        <figure class="figure">
+          <img src={t.data.image} alt={t.data.caption ?? t.data.title} loading="lazy" />
+          {t.data.caption && <figcaption>{t.data.caption}</figcaption>}
+        </figure>
+      )}
+    </section>
+  ))}
+</Base>

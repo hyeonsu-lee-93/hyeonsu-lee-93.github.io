@@ -1,0 +1,27 @@
+me:
+  name: Hyeonsu Lee
+  role: Postdoctoral Researcher
+  affiliation: Korea Institute of Science and Technology (KIST)
+  affiliationUrl: https://www.kist.re.kr/eng/index.do
+  location: Seoul, Republic of Korea
+  website: https://hyeonsu-lee-93.github.io/
+  tagline: Computational neuroscientist studying how small neural circuits give rise to cognitive functions.
+  emails:
+    - hyeonsu.lee@kist.re.kr
+    - hyeonsu.lee.93@gmail.com
+  links:
+    - label: Google Scholar
+      url: https://scholar.google.co.kr/citations?user=SQJck9IAAAAJ
+    - label: LinkedIn
+      url: https://www.linkedin.com/in/hyeonsu-lee-908544258
+    - label: GitHub
+      url: https://github.com/hyeonsu-lee-93
+  interests:
+    - Computational Neuroscience
+    - Mathematical Modelling
+    - Neural Data Analysis
+  # Each line of the CV "Skills" section
+  skills:
+    - Brain-inspired AI, Python, MATLAB, Illustrator,
+    - Neural network modeling & simulation, Data analysis, Mathematical modeling,
+    - LLM simulation, Multi-agent simulation, Human psychophysical experiment, Eye-tracking

@@ -1,0 +1,23 @@
+---
+import type { CollectionEntry } from 'astro:content';
+import { highlightAuthors } from '../lib/format';
+
+interface Props { pub: CollectionEntry<'publications'>; label: string; showYear: boolean }
+const { pub, label, showYear } = Astro.props;
+const p = pub.data;
+const href = p.doi ? `https://doi.org/${p.doi}` : p.url;
+// Conferences: "SfN 2023". Others: "Cell Reports (2023)" / "KR Patent, 10-2024-... (2024)".
+const venue = p.abbr ? `${p.abbr} ${p.year}` : `${[p.venue, p.number].filter(Boolean).join(', ')} (${p.year})`;
+---
+<div class="cv-row">
+  <div class="cv-when">{showYear ? p.year : ''}</div>
+  <div class="cv-what cv-pub">
+    <span class="cv-label">[{label}]</span>{' '}
+    <Fragment set:html={highlightAuthors(p.authors) + '. '} />
+    {p.title}.{' '}
+    <em>{venue}</em>.{' '}
+    {p.note && <><span class="cv-note">{p.note}</span>{' '}</>}
+    {href && <a class="cv-link" href={href} target="_blank" rel="noopener">{p.doi ? 'doi' : 'link'}</a>}
+    {p.korean && <div class="cv-sub">{p.korean}</div>}
+  </div>
+</div>

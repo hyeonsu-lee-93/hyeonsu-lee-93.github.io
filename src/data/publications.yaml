@@ -1,0 +1,391 @@
+# ---------------------------------------------------------------------------
+# All publications, conference presentations and patents.
+# On the CV, each section is sorted by year (newest first); items from the
+# same year keep the order written here.
+#
+# Fields
+#   id        unique key (used by src/content/research/*.md to pick papers)
+#   type      journal | preprint | conference | patent
+#   title     title (no quotes)
+#   authors   author string; "Lee H" is bolded automatically
+#   venue     journal name / full conference name / patent office
+#   abbr      conference abbreviation, e.g. SfN (shown in bold)
+#   year      number
+#   doi       DOI (link is built from it); or use `url` for a direct link
+#   topic     optional research area label (not shown at the moment)
+#   note      optional, e.g. "(Oral)"
+#   scope     conference only: international | domestic
+#   selected  conference only: true -> listed under "Selected Conference Presentations"
+#             (and not repeated under International / Domestic)
+#   number    patent number
+#   korean    patent only: Korean title
+# ---------------------------------------------------------------------------
+
+# ---- Journal articles ------------------------------------------------------
+
+- id: lee2023cellrep
+  type: journal
+  topic: Neural Network Modeling
+  title: Comparison of visual quantities in untrained neural networks
+  authors: Lee H*, Choi W*, Lee D & Paik SB
+  venue: Cell Reports
+  year: 2023
+  doi: 10.1016/j.celrep.2023.112900
+
+- id: lee2020neunet
+  type: journal
+  topic: Neural Network Modeling
+  title: Distinct role of flexible and stable encodings in sequential working memory
+  authors: Lee H, Choi W, Park Y & Paik SB
+  venue: Neural Networks
+  year: 2020
+  doi: 10.1016/j.neunet.2019.09.034
+
+- id: cho2025neunet
+  type: journal
+  topic: Neural Network Modeling
+  title: Neuromimetic metaplasticity for adaptive continual learning without catastrophic forgetting
+  authors: Cho S, Lee H, Baek S & Paik SB
+  venue: Neural Networks
+  year: 2025
+  doi: 10.1016/j.neunet.2025.107762
+
+- id: jeong2021eneuro
+  type: journal
+  topic: Neural Data Analysis
+  title: Interhemispheric cortico-cortical pathway for sequential bimanual movements in mice
+  authors: Jeong M*, Lee H*, …, Paik SB†, Lim BK† & Kim D†
+  venue: eNeuro
+  year: 2021
+  doi: 10.1523/ENEURO.0200-21.2021
+
+- id: bae2021natcomm
+  type: journal
+  topic: Neural Data Analysis
+  title: Parallel processing of working memory and temporal information by distinct types of cortical projection neurons
+  authors: Bae JW*, Jeong H*, …, Lee H, Paik SB & Jung MW
+  venue: Nature Communications
+  year: 2021
+  doi: 10.1038/s41467-021-24565-z
+
+- id: song2018scirep
+  type: journal
+  topic: Neural Data Analysis
+  title: Classification of spatiotemporal neural activity patterns in brain imaging data
+  authors: Song M*, Kang MS*, Lee H, Jeong Y & Paik SB
+  venue: Scientific Reports
+  year: 2018
+  doi: 10.1038/s41598-018-26605-z
+
+# ---- Preprints -------------------------------------------------------------
+
+- id: choi2020biorxiv
+  type: preprint
+  title: Slow rhythmic eye motion predicts periodic alternation of bistable perception
+  authors: Choi W, Lee H & Paik SB
+  venue: bioRxiv
+  year: 2020
+  doi: 10.1101/2020.09.18.303198
+
+# ---- Selected conference presentations ------------------------------------
+
+- id: sfn2025
+  type: conference
+  scope: international
+  selected: true
+  title: Spontaneous social tipping and trend cycles driven by randomness
+  authors: Lee H, Baek S, Choi W, Jang J & Paik SB
+  venue: Society for Neuroscience
+  abbr: SfN
+  year: 2025
+
+- id: cosyne2022
+  type: conference
+  scope: international
+  selected: true
+  title: Spontaneous emergence of magnitude comparison units in untrained deep neural networks
+  authors: Choi W*, Lee H* & Paik SB
+  venue: Computational and Systems Neuroscience
+  abbr: Cosyne
+  year: 2022
+
+- id: sfn2018
+  type: conference
+  scope: international
+  selected: true
+  title: Resource overwrite model for sequential working memory in human
+  authors: Lee H, Choi W, Park Y & Paik SB
+  venue: Society for Neuroscience
+  abbr: SfN
+  year: 2018
+  note: (Oral)
+
+- id: ksbns2017
+  type: conference
+  scope: international
+  selected: true
+  title: Working memory pre-allocation improves the performance of sequential memory task
+  authors: Lee H, Choi W & Paik SB
+  venue: Korean Society for Brain and Neural Sciences
+  abbr: KSBNS
+  year: 2017
+  note: (Best Presentation Award)
+
+# ---- International conferences --------------------------------------------
+
+- id: ksbns2025
+  type: conference
+  scope: international
+  title: Spontaneous social change driven by Stochastic Individual Behavior
+  authors: Lee H, Baek S, Jang J & Paik SB
+  venue: Korean Society for Brain and Neural Sciences
+  abbr: KSBNS
+  year: 2025
+
+- id: sfn2023aesthetic
+  type: conference
+  scope: international
+  title: Emergence of aesthetic preferences in untrained deep neural networks
+  authors: Lee H & Paik SB
+  venue: Society for Neuroscience
+  abbr: SfN
+  year: 2023
+
+- id: sfn2023imitation
+  type: conference
+  scope: international
+  title: Random imitation as an efficient survival strategy in multi-agent systems
+  authors: Kim G, Kang M, Lee H, Park Y, Song M & Paik SB
+  venue: Society for Neuroscience
+  abbr: SfN
+  year: 2023
+
+- id: ksbns2023imitation
+  type: conference
+  scope: international
+  title: Random imitation as an evolutionary strategy in a multi-agent system
+  authors: Kang M, Kim G, Lee H, Park Y, Song M & Paik SB
+  venue: Korean Society for Brain and Neural Sciences
+  abbr: KSBNS
+  year: 2023
+
+- id: sfn2022quantity
+  type: conference
+  scope: international
+  title: Quantity comparison in untrained deep neural networks
+  authors: Lee H*, Choi W*, Lee D & Paik SB
+  venue: Society for Neuroscience
+  abbr: SfN
+  year: 2022
+
+- id: sfn2022imitation
+  type: conference
+  scope: international
+  title: Random imitation for evolution in multi-agent systems
+  authors: Kang M, Lee H, Park Y, Song M & Paik SB
+  venue: Society for Neuroscience
+  abbr: SfN
+  year: 2022
+
+- id: cns2022
+  type: conference
+  scope: international
+  title: Comparison of visual quantities in untrained deep neural networks
+  authors: Lee H*, Choi W*, Lee D & Paik SB
+  venue: Annual Computational Neuroscience Meeting
+  abbr: CNS
+  year: 2022
+
+- id: ksbns2022
+  type: conference
+  scope: international
+  title: Visual quantity comparison in untrained deep neural networks
+  authors: Lee H*, Choi W*, Lee D & Paik SB
+  venue: Korean Society for Brain and Neural Sciences
+  abbr: KSBNS
+  year: 2022
+
+- id: sfn2021
+  type: conference
+  scope: international
+  title: Visual proportion sense in untrained deep neural networks
+  authors: Lee H*, Choi W* & Paik SB
+  venue: Society for Neuroscience
+  abbr: SfN
+  year: 2021
+
+- id: ksbns2020
+  type: conference
+  scope: international
+  title: Distinct types of cortical projection neurons for working memory and timing
+  authors: Bae JW, …, Lee H, Paik SB & Jung MW
+  venue: Korean Society for Brain and Neural Sciences
+  abbr: KSBNS
+  year: 2020
+
+- id: cns2020
+  type: conference
+  scope: international
+  title: Rhythmic eye movement predicts active perception of ambiguous visual stimulus
+  authors: Choi W, Lee H & Paik SB
+  venue: Annual Computational Neuroscience Meeting
+  abbr: CNS
+  year: 2020
+
+- id: sfn2019
+  type: conference
+  scope: international
+  title: Neuronal ensemble encoding bimanual motor coordination in mice
+  authors: Jeong M, Lee H, …, Lim BK, Paik SB & Kim D
+  venue: Society for Neuroscience
+  abbr: SfN
+  year: 2019
+
+- id: cns2018
+  type: conference
+  scope: international
+  title: A dynamic resource model for sequential working memory
+  authors: Lee H, Choi W, Park Y & Paik SB
+  venue: Annual Computational Neuroscience Meeting
+  abbr: CNS
+  year: 2018
+
+- id: sfn2017
+  type: conference
+  scope: international
+  title: Pre-allocation of memory resources improves working memory performance in a sequential memory task
+  authors: Lee H*, Park Y* & Paik SB
+  venue: Society for Neuroscience
+  abbr: SfN
+  year: 2017
+
+- id: cns2017
+  type: conference
+  scope: international
+  title: Pre-allocation of working memory modulates memory performance
+  authors: Lee H, Choi W & Paik SB
+  venue: Annual Computational Neuroscience Meeting
+  abbr: CNS
+  year: 2017
+
+- id: sfn2016disinhibition
+  type: conference
+  scope: international
+  title: Local disinhibition modulates brain functions by mediating global network state
+  authors: Choi W, Lee H & Paik SB
+  venue: Society for Neuroscience
+  abbr: SfN
+  year: 2016
+
+- id: sfn2016classification
+  type: conference
+  scope: international
+  title: Spatio-Temporal Classification of Neural Activity Patterns in Dynamic Brain Imaging Data
+  authors: Song M*, Kang M*, Lee H, Lee H, Jeong Y† & Paik SB†
+  venue: Society for Neuroscience
+  abbr: SfN
+  year: 2016
+
+- id: cns2016
+  type: conference
+  scope: international
+  title: Quantitative Classification of Neural Network Activity Patterns in Imaging Data
+  authors: Song M, Lee H & Paik SB
+  venue: Annual Computational Neuroscience Meeting
+  abbr: CNS
+  year: 2016
+
+# ---- Domestic conferences --------------------------------------------------
+
+- id: cbrain2025
+  type: conference
+  scope: domestic
+  title: Emergent Cycles in Social Behavior from Stochastic Individuals
+  authors: Lee H, Baek S, Jang J & Paik SB
+  venue: Korean Society for Computational Neuroscience Meeting
+  abbr: cbrain
+  year: 2025
+
+- id: kscs2018
+  type: conference
+  scope: domestic
+  title: Sequential overwrite model can explain the serial-position effects in working memory
+  authors: Lee H, Choi W, Park Y & Paik SB
+  venue: Korean Society for Cognitive Science Meeting
+  abbr: KSCS
+  year: 2018
+
+- id: kps2018
+  type: conference
+  scope: domestic
+  title: A theory of resource allocation for sequential memory in human
+  authors: Lee H, Choi W, Park Y & Paik SB
+  venue: Korean Physical Society Meeting
+  abbr: KPS
+  year: 2018
+
+- id: cbrain2017
+  type: conference
+  scope: domestic
+  title: Working memory resource allocation improves the sequential memory performance
+  authors: Lee H, Choi W & Paik SB
+  venue: Annual Korean Society for Computational Neuroscience Meeting
+  abbr: cbrain
+  year: 2017
+
+- id: kps2017
+  type: conference
+  scope: domestic
+  title: A comparative study on simultaneous versus sequential presentation of stimuli for working memory performance
+  authors: Lee H, Choi W & Paik SB
+  venue: Korean Physical Society Meeting
+  abbr: KPS
+  year: 2017
+
+- id: kps2016
+  type: conference
+  scope: domestic
+  title: Computational Classification of Neural Network Activity Patterns for Imaging Data
+  authors: Song M, Lee H & Paik SB
+  venue: Korean Physical Society Meeting
+  abbr: KPS
+  year: 2016
+
+- id: cbrain2015
+  type: conference
+  scope: domestic
+  title: Classification of the Neural Activity Patterns by Spatio-Temporal Correlation Index
+  authors: Lee H*, Song M* & Paik SB
+  venue: Korean Society for Computational Neuroscience Meeting
+  abbr: cbrain
+  year: 2015
+
+- id: kps2015
+  type: conference
+  scope: domestic
+  title: A Biologically Inspired Adaptive Model for Efficient Image Compression
+  authors: Lee H, Jang J & Paik SB
+  venue: Korean Physical Society Meeting
+  abbr: KPS
+  year: 2015
+
+# ---- Patents ---------------------------------------------------------------
+
+- id: patent-us
+  type: patent
+  title: Storage device using neural network and operating method for automatic redistribution of information and variable storage capacity based on accuracy-storage capacity tradeoff thereof
+  korean: 신경망을 이용한 기억 장치 및 그의 정확성-저장용량 트레이드오프에 기반한 정보의 자동적 재분배 및 가변적 용량 구현을 위한 동작 방법
+  authors: Paik SB, Lee H, Park Y
+  venue: US Patent
+  number: US 11,467,728 B2
+  year: 2022
+  url: https://patents.google.com/patent/US11467728B2/en
+
+- id: patent-kr2024
+  type: patent
+  title: Method for addressing catastrophic forgetting in artificial neural networks using neuromimetic metaplasticity rules observed in natural brains
+  korean: 생물학적 두뇌의 메타가소성 법칙을 적용하여 인공신경망 학습에서 파괴적 망각을 해결하는 방법 및 장치
+  authors: Paik SB, Cho S, Lee H, Baek S
+  venue: KR Patent
+  number: 10-2024-0199987
+  year: 2024

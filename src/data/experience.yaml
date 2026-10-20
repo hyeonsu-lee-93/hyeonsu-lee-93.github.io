@@ -1,0 +1,44 @@
+# Shown in this order on the CV. **bold** works inside bullets.
+- id: kist
+  start: "2024.10"
+  end: "Present"
+  position: Postdoctoral researcher
+  advisor: Jaeson Jang
+  organization: KIST
+  bullets:
+    - "**Multi-agent model simulation** (LLM, agent-based, etc.)"
+    - "**Data analysis** (human/animal behaviors, mouse proteomics)"
+
+- id: kaist-grad
+  start: "2016.03"
+  end: "2024.08"
+  position: Graduate researcher
+  organization: KAIST
+  bullets:
+    - "**Neural circuit modeling** of visual cognitive functions"
+    - "Interpret behavioral data via **reinforcement learning**"
+    - "**Neural data analysis**: Spike, LFP, Calcium imaging, etc."
+
+- id: kaist-intern2015
+  start: "2015.01"
+  end: "2016.02"
+  position: Research intern
+  organization: KAIST
+  bullets:
+    - Modeling visual system-like image compression algorithm
+
+- id: ybrain
+  start: "2014.04"
+  end: "2014.11"
+  position: Researcher
+  organization: ybrain
+  bullets:
+    - Design clinical trials (AD and MDD), Neural data analysis, Human psychophysical experiments
+
+- id: kaist-intern2013
+  start: "2013.07"
+  end: "2013.08"
+  position: Research intern
+  organization: KAIST
+  bullets:
+    - Analyzing functional brain imaging (DWI)

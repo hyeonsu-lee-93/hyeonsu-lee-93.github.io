@@ -1,52 +1,76 @@
-# [Hugo Academic CV Theme](https://github.com/HugoBlox/theme-academic-cv)
+# Personal homepage
 
-[![Screenshot](.github/preview.webp)](https://hugoblox.com/templates/)
+[Astro](https://astro.build)로 만든 개인 홈페이지. Home, Research, CV 세 페이지로 구성되어 있고,
+GitHub Pages로 배포된다.
 
-The Hugo **Academic CV Template** empowers you to easily create your job-winning online resumé, showcase your academic publications, and create online courses or knowledge bases to grow your audience.
+## 자주 하는 일
 
-[![Get Started](https://img.shields.io/badge/-Get%20started-ff4655?style=for-the-badge)](https://hugoblox.com/templates/)
-[![Discord](https://img.shields.io/discord/722225264733716590?style=for-the-badge)](https://discord.com/channels/722225264733716590/742892432458252370/742895548159492138)  
-[![Twitter Follow](https://img.shields.io/twitter/follow/GetResearchDev?label=Follow%20on%20Twitter)](https://twitter.com/GetResearchDev)
+| 하고 싶은 일 | 고칠 곳 |
+| --- | --- |
+| 소식(News) 추가 | `src/content/news/YYYY-MM-DD-slug.md` 파일 하나 추가 |
+| 논문·학회·특허 추가 | `src/data/publications.yaml`에 항목 추가 |
+| Research 주제 수정 | `src/content/research/*.md` (frontmatter의 `papers`에 논문 id를 넣으면 대표 논문으로 표시) |
+| Research 그림 | 그림을 `public/research/`에 넣고, 주제 파일 frontmatter에 `image: /research/파일명.png`, `caption: "설명"` 추가 |
+| 기술(Skills) | `src/data/profile.yaml`의 `skills` (한 줄이 CV의 한 줄) |
+| 학력·경력·수상 수정 | `src/data/education.yaml`, `experience.yaml`, `awards.yaml` (학력·경력은 파일에 적은 순서대로, 논문·학회·수상은 최신 연도부터 CV에 표시) |
+| 이름·소속·이메일·링크 | `src/data/profile.yaml` |
+| 자기소개 문단 | `src/pages/index.astro` |
+| CV PDF 교체 | `public/cv.pdf` 덮어쓰기 |
+| 사진 교체 | `public/avatar.jpg` 덮어쓰기 |
+| 색·글꼴·여백 | `src/styles/global.css` |
 
-️**Trusted by 250,000+ researchers, educators, and students.** Highly customizable via the integrated **no-code, Hugo Blox Builder**, making every site truly personalized ⭐⭐⭐⭐⭐
+### News 파일 예시
 
-Easily write technical content with plain text Markdown, LaTeX math, diagrams, RMarkdown, or Jupyter, and import publications from BibTeX.
+```md
+---
+title: "Paper on XXX published in *Nature Neuroscience*"
+date: 2026-01-15
+---
 
-[Check out the latest demo](https://academic-demo.netlify.app/) of what you'll get in less than 10 minutes, or [get inspired by our academics and research groups](https://hugoblox.com/creators/).
+본문 (선택). 있으면 제목 옆에 +가 생기고, 누르면 펼쳐진다.
+```
 
-The integrated [**Hugo Blox Builder**](https://hugoblox.com) and CMS makes it easy to create a beautiful website for free. Edit your site in the CMS (or your favorite editor), generate it with [Hugo](https://github.com/gohugoio/hugo), and deploy with GitHub or Netlify. Customize anything on your site with widgets, light/dark themes, and language packs.
+### 논문 항목 예시
 
-- 👉 [**Get Started**](https://hugoblox.com/templates/)
-- 📚 [View the **documentation**](https://docs.hugoblox.com/)
-- 💬 [Chat with the **Hugo Blox Builder community**](https://discord.gg/z8wNYzb) or [**Hugo community**](https://discourse.gohugo.io)
-- 🐦 Twitter: [@GetResearchDev](https://twitter.com/GetResearchDev) [@GeorgeCushen](https://twitter.com/GeorgeCushen) [#MadeWithHugoBlox](https://twitter.com/search?q=%23MadeWithHugoBlox&src=typed_query)
-- ⬇️ **Automatically import your publications from BibTeX** with the [Hugo Academic CLI](https://github.com/GetRD/academic-file-converter)
-- 💡 [Suggest an improvement](https://github.com/HugoBlox/hugo-blox-builder/issues)
-- ⬆️ **Updating?** View the [Update Guide](https://docs.hugoblox.com/reference/update/) and [Release Notes](https://github.com/HugoBlox/hugo-blox-builder/releases)
+```yaml
+- id: lee2026natneuro        # research/*.md 에서 참조할 때 쓰는 고유 id
+  type: journal              # journal | preprint | conference | patent
+  title: Paper title
+  authors: Lee H*, Kim A* & Paik SB   # "Lee H"는 자동으로 굵게 표시
+  venue: Nature Neuroscience
+  year: 2026
+  doi: 10.1038/xxxx
+  code: https://github.com/...        # 선택
+```
 
-## We ask you, humbly, to support this open source movement
+학회는 `scope: international | domestic`, `note: (Oral)` 같은 항목을 추가로 쓸 수 있다.
+`selected: true`를 넣으면 CV의 Selected Conference Presentations에 따로 나오고, International/Domestic 목록에서는 빠진다.
 
-Today we ask you to defend the open source independence of the Hugo Blox Builder and themes 🐧
+CV 페이지는 브라우저에서 인쇄(⌘P)하면 메뉴와 버튼이 빠진 깔끔한 문서로 나온다. `public/cv.pdf`를 새로 만들 때 쓰면 된다.
 
-We're an open source movement that depends on your support to stay online and thriving, but 99.9% of our creators don't give; they simply look the other way.
+## 로컬에서 보기
 
-### [❤️ Click here to become a Sponsor, unlocking awesome perks such as _exclusive academic templates and blocks_](https://hugoblox.com/sponsor/)
+```bash
+npm install
+npm run dev
+```
 
-<!--
-<p align="center"><a href="https://hugoblox.com/templates/" target="_blank" rel="noopener"><img src="https://hugoblox.com/uploads/readmes/academic_logo_200px.png" alt="Hugo Academic Theme for Hugo Blox Builder"></a></p>
--->
+브라우저에서 http://localhost:4321 을 연다.
 
-## Demo image credits
+## 배포
 
-- [Unsplash](https://unsplash.com)
+`main` 브랜치에 push하면 `.github/workflows/deploy.yml`이 자동으로 빌드해서 GitHub Pages에 올린다.
+저장소 Settings → Pages → Source를 **GitHub Actions**로 한 번만 설정해 두면 된다.
 
-## Latest news
+## 개인 도메인 연결 (예: hyeonsulee.io)
 
-<!--START_SECTION:news-->
+도메인을 산 뒤에만 아래를 진행한다. 먼저 하면 github.io 주소까지 접속이 안 된다.
 
-- [Easily make an academic CV website to get more cites and grow your audience 🚀](https://hugoblox.com/blog/easily-make-academic-website/)
-- [What&#39;s new in v5.2?](https://hugoblox.com/blog/whats-new-in-v5.2/)
-- [What&#39;s new in v5.1?](https://hugoblox.com/blog/whats-new-in-v5.1/)
-- [Version 5.0 (February 2021)](https://hugoblox.com/blog/version-5.0-february-2021/)
-- [Version 5.0 Beta 3 (February 2021)](https://hugoblox.com/blog/version-5.0-beta-3-february-2021/)
-<!--END_SECTION:news-->
+1. 도메인 등록 업체의 DNS 설정에서 다음 레코드를 추가한다.
+   - `A` 레코드 4개, 이름 `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
+   - `CNAME` 레코드, 이름 `www`: `hyeonsu-lee-93.github.io`
+2. 저장소 Settings → Pages → Custom domain에 `hyeonsulee.io`를 입력하고, 확인이 끝나면 Enforce HTTPS를 켠다.
+3. `public/CNAME` 파일을 만들고 내용으로 `hyeonsulee.io` 한 줄을 넣는다.
+4. `astro.config.mjs`의 `site`를 `https://hyeonsulee.io`로 바꾼다.
+
+기존 `hyeonsu-lee-93.github.io` 주소로 들어오면 새 도메인으로 자동으로 넘어간다.
