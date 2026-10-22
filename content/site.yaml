@@ -1,0 +1,84 @@
+# =====================================================================
+#  홈페이지 전체에서 쓰는 짧은 문구 모음
+#
+#  - 각 줄의 콜론(:) 오른쪽만 고치면 됩니다.
+#  - 앞쪽 들여쓰기(빈칸 수)는 바꾸지 마세요.
+#  - 문구에 콜론(:)이나 맨 앞에 * 가 있으면 "큰따옴표"로 감싸세요.
+# =====================================================================
+
+# ---- 기본 정보 -------------------------------------------------------
+name: Hyeonsu Lee                     # 메뉴 막대 왼쪽, 브라우저 탭, 맨 아래 저작권 표시
+display_name: Hyeonsu Lee, Ph.D.      # 홈 사진 옆과 CV 맨 위의 큰 이름
+role: Postdoctoral Researcher
+affiliation: Korea Institute of Science and Technology (KIST)
+affiliation_url: https://www.kist.re.kr/eng/index.do   # 비우면 소속에 링크가 걸리지 않음
+location: Seoul, Republic of Korea    # CV 맨 위에 표시
+description: Computational neuroscientist studying how small neural circuits give rise to cognitive functions.   # 검색엔진에 보이는 사이트 설명
+highlight_author: Lee H               # 논문 저자 목록에서 굵게 표시할 이름
+
+emails:
+  - hyeonsu.lee@kist.re.kr
+  - hyeonsu.lee.93@gmail.com
+
+# 홈 화면 링크 줄 (순서대로 표시). "Google Scholar"는 CV 맨 위에도 표시됨
+links:
+  - label: Google Scholar
+    url: https://scholar.google.co.kr/citations?user=SQJck9IAAAAJ
+  - label: LinkedIn
+    url: https://www.linkedin.com/in/hyeonsu-lee-908544258
+  - label: GitHub
+    url: https://github.com/hyeonsu-lee-93
+
+# 홈 화면 태그 + CV의 Research Interests
+interests:
+  - Computational Neuroscience
+  - Mathematical Modelling
+  - Neural Data Analysis
+
+# CV의 Skills (한 항목이 한 줄)
+skills:
+  - Brain-inspired AI, Python, MATLAB, Illustrator
+  - Neural network modeling & simulation, Data analysis, Mathematical modeling
+  - LLM simulation, Multi-agent simulation, Human psychophysical experiment, Eye-tracking
+
+google_analytics: G-B6CYVDTBRH        # 구글 애널리틱스 ID. 비우면 꺼짐
+
+# ---- 메뉴 이름 -------------------------------------------------------
+menu:
+  home: Home
+  research: Research
+  cv: CV
+
+# ---- Home 페이지 -----------------------------------------------------
+# 자기소개 문단은 content/home.md 에 있음
+home:
+  cv_link: CV (PDF)
+  news_title: Recent News
+
+# ---- Research 페이지 -------------------------------------------------
+# 맨 위 소개 문장은 content/research.md, 주제별 글은 content/research/ 폴더에 있음
+research:
+  title: Research
+  representative_work: Representative work
+
+# ---- CV 페이지 -------------------------------------------------------
+# 내용은 content/cv/ 폴더의 파일들에 있음
+cv:
+  kicker: Curriculum Vitae
+  download_button: Download PDF
+  download_filename: CV_Hyeonsu_Lee.pdf   # 버튼으로 받을 때 저장되는 파일 이름
+  advisor: Advisor
+  research_interests: Research Interests
+  education: Education
+  experience: Research Experience
+  journals: Journal Articles
+  journal_legend: "* equal contribution, † corresponding author"
+  preprints: Preprints
+  selected_conferences: Selected Conference Presentations
+  patents: Patents
+  conferences: Conference Presentations
+  international: International
+  domestic: Domestic
+  awards: Honors and Awards
+  skills: Skills
+  last_updated: Last updated

@@ -4,7 +4,7 @@
 # same year keep the order written here.
 #
 # Fields
-#   id        unique key (used by src/content/research/*.md to pick papers)
+#   id        unique key (used by content/research/*.md to pick papers)
 #   type      journal | preprint | conference | patent
 #   title     title (no quotes)
 #   authors   author string; "Lee H" is bolded automatically

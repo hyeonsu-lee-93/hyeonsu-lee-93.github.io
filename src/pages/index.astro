@@ -1,9 +1,12 @@
 ---
+// Home. Texts: content/site.yaml, content/home.md, content/news/
 import Base from '../layouts/Base.astro';
 import { getCollection, getEntry, render } from 'astro:content';
 import { formatMonth, inlineMd } from '../lib/format';
+import { getSite } from '../lib/site';
 
-const me = (await getEntry('profile', 'me'))!.data;
+const site = await getSite();
+const { Content: Bio } = await render((await getEntry('pages', 'home'))!);
 const news = (await getCollection('news')).sort((a, b) => b.data.date.valueOf() - a.data.date.valueOf());
 const rendered = await Promise.all(
   news.map(async (n) => ({ ...n, Content: (await render(n)).Content, hasBody: (n.body ?? '').trim().length > 0 })),
@@ -11,31 +14,23 @@ const rendered = await Promise.all(
 ---
 <Base>
   <section class="hero">
-    <img src="/avatar.jpg" alt={me.name} width="150" />
+    <img src="/avatar.jpg" alt={site.name} width="150" />
     <div>
-      <h1>{me.name}, Ph.D.</h1>
-      <p class="role">{me.role}, {me.affiliationUrl ? <a href={me.affiliationUrl}>{me.affiliation}</a> : me.affiliation}</p>
-      <p>
-        Hi, my name is Hyeonsu Lee. I earned my Ph.D. in <strong>Computational Neuroscience</strong> from KAIST
-        (Aug 2024, advisor: Prof. <a href="https://scholar.google.co.kr/citations?user=VQK2PP0AAAAJ">Se-Bum Paik</a>)
-        and am currently continuing my research at KIST
-        (advisor: Dr. <a href="https://scholar.google.co.kr/citations?user=2f7KAdQAAAAJ">Jaeson Jang</a>).
-        I hold a B.S. in Mathematical Sciences and an M.S. in Bio and Brain Engineering from KAIST, where I developed a
-        deep interest in understanding <strong>how neural activity within small brain circuits can efficiently enable
-        complex cognitive functions</strong>.
-      </p>
+      <h1>{site.display_name}</h1>
+      <p class="role">{site.role}, {site.affiliation_url ? <a href={site.affiliation_url}>{site.affiliation}</a> : site.affiliation}</p>
+      <div class="bio"><Bio /></div>
       <ul class="tags">
-        {me.interests.map((i) => <li>{i}</li>)}
+        {site.interests.map((i) => <li>{i}</li>)}
       </ul>
       <div class="links">
-        {me.emails.map((e) => <a href={`mailto:${e}`}>{e}</a>)}
-        {me.links.map((l) => <a href={l.url} target="_blank" rel="noopener">{l.label}</a>)}
-        <a href="/cv.pdf">CV (PDF)</a>
+        {site.emails.map((e) => <a href={`mailto:${e}`}>{e}</a>)}
+        {site.links.map((l) => <a href={l.url} target="_blank" rel="noopener">{l.label}</a>)}
+        <a href="/cv.pdf">{site.home.cv_link}</a>
       </div>
     </div>
   </section>
 
-  <h2>Recent News</h2>
+  <h2>{site.home.news_title}</h2>
   <ul class="news">
     {rendered.map((n) => (
       <li>

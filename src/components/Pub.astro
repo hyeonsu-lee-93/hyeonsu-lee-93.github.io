@@ -1,9 +1,11 @@
 ---
 import type { CollectionEntry } from 'astro:content';
 import { highlightAuthors } from '../lib/format';
+import { getSite } from '../lib/site';
 
 interface Props { pub: CollectionEntry<'publications'> }
 const { data: p } = Astro.props.pub;
+const me = (await getSite()).highlight_author;
 const href = p.doi ? `https://doi.org/${p.doi}` : p.url;
 // Conference venues such as "SfN 2023" already carry the year.
 const meta = p.abbr
@@ -16,7 +18,7 @@ const meta = p.abbr
     {p.note && <span class="muted"> {p.note}</span>}
   </span>
   <span class="pmeta">
-    <Fragment set:html={highlightAuthors(p.authors) + '. '} /><em>{meta}</em>
+    <Fragment set:html={highlightAuthors(p.authors, me) + '. '} /><em>{meta}</em>
   </span>
   {p.korean && <span class="pkorean">{p.korean}</span>}
   {p.code && (

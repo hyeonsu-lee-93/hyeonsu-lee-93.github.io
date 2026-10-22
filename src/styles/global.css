@@ -122,6 +122,8 @@ p { margin: 0 0 1em; }
   .hero img { width: 120px; margin-top: 0; }
 }
 
+.intro p:last-child { margin-bottom: 1em; }
+
 /* News */
 .news { list-style: none; padding: 0; margin: 0; }
 .news li {

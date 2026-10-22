@@ -1,3 +1,4 @@
+// Where every piece of editable text lives. All of it is in the top-level `content/` folder.
 import { defineCollection, z } from 'astro:content';
 import { glob, file } from 'astro/loaders';
 import { parse } from 'yaml';
@@ -10,9 +11,66 @@ const ordered = (path: string) =>
       (parse(text) as Record<string, unknown>[]).map((item, i) => ({ ...item, order: i })),
   });
 
-// News: one Markdown file per item in src/content/news/
+// content/site.yaml: one file with all short texts (profile, menu, headings, buttons)
+const label = (fallback: string) => z.string().default(fallback);
+const site = defineCollection({
+  loader: file('content/site.yaml', { parser: (text) => ({ site: parse(text) }) }),
+  schema: z.object({
+    name: z.string(),
+    display_name: z.string(),
+    role: z.string(),
+    affiliation: z.string(),
+    affiliation_url: z.string().nullish(),
+    location: z.string().nullish(),
+    description: z.string().nullish(),
+    highlight_author: z.string().nullish(),
+    emails: z.array(z.string()).default([]),
+    links: z.array(z.object({ label: z.string(), url: z.string() })).default([]),
+    interests: z.array(z.string()).default([]),
+    skills: z.array(z.string()).default([]),
+    google_analytics: z.string().nullish(),
+    menu: z
+      .object({ home: label('Home'), research: label('Research'), cv: label('CV') })
+      .default({}),
+    home: z
+      .object({ cv_link: label('CV (PDF)'), news_title: label('Recent News') })
+      .default({}),
+    research: z
+      .object({ title: label('Research'), representative_work: label('Representative work') })
+      .default({}),
+    cv: z
+      .object({
+        kicker: label('Curriculum Vitae'),
+        download_button: label('Download PDF'),
+        download_filename: label('CV.pdf'),
+        advisor: label('Advisor'),
+        research_interests: label('Research Interests'),
+        education: label('Education'),
+        experience: label('Research Experience'),
+        journals: label('Journal Articles'),
+        journal_legend: label('* equal contribution, † corresponding author'),
+        preprints: label('Preprints'),
+        selected_conferences: label('Selected Conference Presentations'),
+        patents: label('Patents'),
+        conferences: label('Conference Presentations'),
+        international: label('International'),
+        domestic: label('Domestic'),
+        awards: label('Honors and Awards'),
+        skills: label('Skills'),
+        last_updated: label('Last updated'),
+      })
+      .default({}),
+  }),
+});
+
+// content/home.md and content/research.md: longer intro paragraphs
+const pages = defineCollection({
+  loader: glob({ pattern: '{home,research}.md', base: './content' }),
+});
+
+// content/news/: one Markdown file per news item
 const news = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/news' }),
+  loader: glob({ pattern: '**/*.md', base: './content/news' }),
   schema: z.object({
     title: z.string(),
     date: z.coerce.date(),
@@ -20,9 +78,9 @@ const news = defineCollection({
   }),
 });
 
-// Research topics: one Markdown file per topic in src/content/research/
+// content/research/: one Markdown file per research topic
 const research = defineCollection({
-  loader: glob({ pattern: '**/*.md', base: './src/content/research' }),
+  loader: glob({ pattern: '**/*.md', base: './content/research' }),
   schema: z.object({
     title: z.string(),
     order: z.number(),
@@ -33,9 +91,9 @@ const research = defineCollection({
   }),
 });
 
-// Publications, conferences and patents: all in src/data/publications.yaml
+// content/cv/publications.yaml: journals, preprints, conferences and patents
 const publications = defineCollection({
-  loader: ordered('src/data/publications.yaml'),
+  loader: ordered('content/cv/publications.yaml'),
   schema: z.object({
     order: z.number(),
     type: z.enum(['journal', 'preprint', 'conference', 'patent']),
@@ -56,25 +114,8 @@ const publications = defineCollection({
   }),
 });
 
-const profile = defineCollection({
-  loader: file('src/data/profile.yaml'),
-  schema: z.object({
-    name: z.string(),
-    role: z.string(),
-    affiliation: z.string(),
-    affiliationUrl: z.string().optional(),
-    location: z.string().optional(),
-    website: z.string().optional(),
-    tagline: z.string().optional(),
-    emails: z.array(z.string()),
-    links: z.array(z.object({ label: z.string(), url: z.string() })),
-    interests: z.array(z.string()),
-    skills: z.array(z.string()).default([]),
-  }),
-});
-
 const education = defineCollection({
-  loader: ordered('src/data/education.yaml'),
+  loader: ordered('content/cv/education.yaml'),
   schema: z.object({
     start: z.string(),
     end: z.string(),
@@ -89,7 +130,7 @@ const education = defineCollection({
 });
 
 const experience = defineCollection({
-  loader: ordered('src/data/experience.yaml'),
+  loader: ordered('content/cv/experience.yaml'),
   schema: z.object({
     start: z.string(),
     end: z.string(),
@@ -102,7 +143,7 @@ const experience = defineCollection({
 });
 
 const awards = defineCollection({
-  loader: ordered('src/data/awards.yaml'),
+  loader: ordered('content/cv/awards.yaml'),
   schema: z.object({
     order: z.number(),
     title: z.string(),
@@ -111,4 +152,4 @@ const awards = defineCollection({
   }),
 });
 
-export const collections = { news, research, publications, profile, education, experience, awards };
+export const collections = { site, pages, news, research, publications, education, experience, awards };

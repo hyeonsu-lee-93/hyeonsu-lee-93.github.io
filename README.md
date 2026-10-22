@@ -1,77 +1,62 @@
 # Personal homepage
 
-[Astro](https://astro.build)로 만든 개인 홈페이지. Home, Research, CV 세 페이지로 구성되어 있고,
-GitHub Pages로 배포된다.
+https://hyeonsu-lee-93.github.io/
 
-## 자주 하는 일
+[Astro](https://astro.build)로 만든 개인 홈페이지입니다. Home, Research, CV 세 페이지로 되어 있고,
+`main` 브랜치에 변경이 올라가면 GitHub Actions가 자동으로 빌드해서 GitHub Pages에 배포합니다.
 
-| 하고 싶은 일 | 고칠 곳 |
+## 글 고치기 → [`content/`](content) 폴더
+
+**홈페이지에 보이는 글은 모두 [`content/`](content) 폴더에 있습니다.** 자세한 안내는 [content/README.md](content/README.md)를 보세요.
+
+| 고칠 내용 | 파일 |
 | --- | --- |
-| 소식(News) 추가 | `src/content/news/YYYY-MM-DD-slug.md` 파일 하나 추가 |
-| 논문·학회·특허 추가 | `src/data/publications.yaml`에 항목 추가 |
-| Research 주제 수정 | `src/content/research/*.md` (frontmatter의 `papers`에 논문 id를 넣으면 대표 논문으로 표시) |
-| Research 그림 | 그림을 `public/research/`에 넣고, 주제 파일 frontmatter에 `image: /research/파일명.png`, `caption: "설명"` 추가 |
-| 기술(Skills) | `src/data/profile.yaml`의 `skills` (한 줄이 CV의 한 줄) |
-| 학력·경력·수상 수정 | `src/data/education.yaml`, `experience.yaml`, `awards.yaml` (학력·경력은 파일에 적은 순서대로, 논문·학회·수상은 최신 연도부터 CV에 표시) |
-| 이름·소속·이메일·링크 | `src/data/profile.yaml` |
-| 자기소개 문단 | `src/pages/index.astro` |
-| CV PDF 교체 | `public/cv.pdf` 덮어쓰기 |
-| 사진 교체 | `public/avatar.jpg` 덮어쓰기 |
-| 색·글꼴·여백 | `src/styles/global.css` |
-| 구글 애널리틱스 ID | `src/layouts/Base.astro`의 `GA_ID` (실제 사이트에서만 동작) |
+| 이름, 직함, 소속, 이메일, 링크, 관심 분야, 기술, 메뉴·섹션 제목, 버튼 문구, 애널리틱스 ID | [content/site.yaml](content/site.yaml) |
+| 홈 자기소개 문단 | [content/home.md](content/home.md) |
+| Recent News (파일 하나 = 소식 하나) | [content/news/](content/news) |
+| Research 맨 위 소개 문장 | [content/research.md](content/research.md) |
+| Research 주제별 글, 대표 논문, 그림 | [content/research/](content/research) |
+| 논문·학회·특허 / 학력 / 경력 / 수상 | [content/cv/](content/cv) |
 
-### News 파일 예시
+## 사진·그림·PDF → [`public/`](public) 폴더
 
-```md
----
-title: "Paper on XXX published in *Nature Neuroscience*"
-date: 2026-01-15
----
+| 바꿀 파일 | 위치 |
+| --- | --- |
+| 홈 사진 | `public/avatar.jpg` 덮어쓰기 |
+| CV PDF (Download PDF 버튼) | `public/cv.pdf` 덮어쓰기 |
+| Research 그림 | `public/research/`에 올리고, 주제 파일에 `image: /research/파일명.png` |
 
-본문 (선택). 있으면 제목 옆에 +가 생기고, 누르면 펼쳐진다.
-```
+## 고치는 방법
 
-### 논문 항목 예시
-
-```yaml
-- id: lee2026natneuro        # research/*.md 에서 참조할 때 쓰는 고유 id
-  type: journal              # journal | preprint | conference | patent
-  title: Paper title
-  authors: Lee H*, Kim A* & Paik SB   # "Lee H"는 자동으로 굵게 표시
-  venue: Nature Neuroscience
-  year: 2026
-  doi: 10.1038/xxxx
-  code: https://github.com/...        # 선택
-```
-
-학회는 `scope: international | domestic`, `note: (Oral)` 같은 항목을 추가로 쓸 수 있다.
-`selected: true`를 넣으면 CV의 Selected Conference Presentations에 따로 나오고, International/Domestic 목록에서는 빠진다.
-
-CV 페이지는 브라우저에서 인쇄(⌘P)하면 메뉴와 버튼이 빠진 깔끔한 문서로 나온다. `public/cv.pdf`를 새로 만들 때 쓰면 된다.
-
-## 로컬에서 보기
+- **GitHub 웹에서**: 파일을 열고 연필 아이콘 → 수정 → **Commit changes**. 1~2분 뒤 사이트에 반영됩니다.
+- **여러 파일을 한 번에**: 저장소 페이지에서 키보드 `.`을 누르면 브라우저 안에서 편집기가 열립니다.
+- **내 컴퓨터에서**: 아래처럼 미리 본 뒤 commit, push 합니다.
 
 ```bash
 npm install
 npm run dev
 ```
 
-브라우저에서 http://localhost:4321 을 연다.
+형식이 틀려 빌드가 실패하면 **Actions** 탭에 빨간 X가 뜨고, 사이트는 직전 버전이 그대로 유지됩니다.
 
-## 배포
+## 디자인 (보통은 건드릴 필요 없음)
 
-`main` 브랜치에 push하면 `.github/workflows/deploy.yml`이 자동으로 빌드해서 GitHub Pages에 올린다.
-저장소 Settings → Pages → Source를 **GitHub Actions**로 한 번만 설정해 두면 된다.
+| 바꿀 것 | 위치 |
+| --- | --- |
+| 색, 글꼴, 여백, 본문 폭 | `src/styles/global.css` |
+| 페이지 구조 | `src/pages/` (`index.astro`, `research.astro`, `cv.astro`) |
 
 ## 개인 도메인 연결 (예: hyeonsulee.io)
 
-도메인을 산 뒤에만 아래를 진행한다. 먼저 하면 github.io 주소까지 접속이 안 된다.
+도메인을 산 뒤에만 진행합니다. 먼저 하면 github.io 주소까지 접속이 안 됩니다.
 
-1. 도메인 등록 업체의 DNS 설정에서 다음 레코드를 추가한다.
+1. 도메인 업체의 DNS 설정에 다음 레코드를 추가합니다.
    - `A` 레코드 4개, 이름 `@`: `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - `CNAME` 레코드, 이름 `www`: `hyeonsu-lee-93.github.io`
-2. 저장소 Settings → Pages → Custom domain에 `hyeonsulee.io`를 입력하고, 확인이 끝나면 Enforce HTTPS를 켠다.
-3. `public/CNAME` 파일을 만들고 내용으로 `hyeonsulee.io` 한 줄을 넣는다.
-4. `astro.config.mjs`의 `site`를 `https://hyeonsulee.io`로 바꾼다.
+2. 저장소 Settings → Pages → Custom domain에 도메인을 입력하고, 확인이 끝나면 Enforce HTTPS를 켭니다.
+3. `public/CNAME` 파일을 만들고 도메인 한 줄을 넣습니다.
+4. `astro.config.mjs`의 `site`를 새 주소로 바꿉니다.
 
-기존 `hyeonsu-lee-93.github.io` 주소로 들어오면 새 도메인으로 자동으로 넘어간다.
+## 이전 사이트
+
+예전 Hugo Blox 사이트는 `hugo-backup` 브랜치에 그대로 있습니다.

@@ -1,19 +1,20 @@
 ---
+// Research. Texts: content/site.yaml, content/research.md, content/research/
 import Base from '../layouts/Base.astro';
 import Pub from '../components/Pub.astro';
-import { getCollection, render } from 'astro:content';
+import { getCollection, getEntry, render } from 'astro:content';
+import { getSite } from '../lib/site';
 
+const site = await getSite();
+const { Content: Intro } = await render((await getEntry('pages', 'research'))!);
 const topics = (await getCollection('research')).sort((a, b) => a.data.order - b.data.order);
 const pubs = await getCollection('publications');
 const byId = new Map(pubs.map((p) => [p.id, p]));
 const rendered = await Promise.all(topics.map(async (t) => ({ ...t, Content: (await render(t)).Content })));
 ---
-<Base title="Research">
-  <h1>Research</h1>
-  <p class="muted">
-    I study how cognitive functions emerge from the activity of small neural circuits, using mathematical modelling,
-    neural network simulation and neural data analysis.
-  </p>
+<Base title={site.research.title}>
+  <h1>{site.research.title}</h1>
+  <div class="muted intro"><Intro /></div>
 
   {rendered.map((t) => (
     <section class="topic">
@@ -21,7 +22,7 @@ const rendered = await Promise.all(topics.map(async (t) => ({ ...t, Content: (aw
       <div class="body"><t.Content /></div>
       {t.data.papers.length > 0 && (
         <div class="reps">
-          <h3>Representative work</h3>
+          <h3>{site.research.representative_work}</h3>
           <ul class="pubs">
             {t.data.papers.map((id) => {
               const p = byId.get(id);

@@ -1,13 +1,14 @@
-const ME = 'Lee H';
+const escapeRe = (s: string) => s.replace(/[.*+?^${}()|[\]\\]/g, '\\$&');
 
-/** Bold the site owner's name inside an author string. */
-export function highlightAuthors(authors: string): string {
+/** Bold the site owner's name (`highlight_author` in content/site.yaml) inside an author string. */
+export function highlightAuthors(authors: string, me?: string | null): string {
   const escaped = authors
     .replace(/&/g, '&amp;')
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;');
-  const re = new RegExp(`${ME}(?=[*,\\s†]|$)`, 'g');
-  return escaped.replace(re, `<strong>${ME}</strong>`);
+  if (!me) return escaped;
+  const re = new RegExp(`${escapeRe(me)}(?=[*,\\s†]|$)`, 'g');
+  return escaped.replace(re, `<strong>${me}</strong>`);
 }
 
 export function formatDate(d: Date): string {

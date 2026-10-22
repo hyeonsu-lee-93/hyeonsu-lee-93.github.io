@@ -1,22 +1,23 @@
 ---
+// Shared page frame. All texts come from content/site.yaml.
 import '../styles/global.css';
-import { getEntry } from 'astro:content';
+import { getSite } from '../lib/site';
 
 interface Props {
   title?: string;
   description?: string;
 }
 const { title, description } = Astro.props;
-const me = (await getEntry('profile', 'me'))!.data;
-const fullTitle = title ? `${title} | ${me.name}` : me.name;
+const site = await getSite();
+const fullTitle = title ? `${title} | ${site.name}` : site.name;
 // Google Analytics (GA4). Loaded only on the built site, not in `npm run dev`.
-const GA_ID = 'G-B6CYVDTBRH';
+const GA_ID = site.google_analytics;
 const useAnalytics = import.meta.env.PROD && GA_ID;
 const path = Astro.url.pathname.replace(/\/$/, '') || '/';
 const nav = [
-  { href: '/', label: 'Home' },
-  { href: '/research', label: 'Research' },
-  { href: '/cv', label: 'CV' },
+  { href: '/', label: site.menu.home },
+  { href: '/research', label: site.menu.research },
+  { href: '/cv', label: site.menu.cv },
 ];
 ---
 <!doctype html>
@@ -25,7 +26,7 @@ const nav = [
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>{fullTitle}</title>
-    <meta name="description" content={description ?? me.tagline ?? ''} />
+    <meta name="description" content={description ?? site.description ?? ''} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
     {useAnalytics && (
       <>
@@ -43,7 +44,7 @@ gtag('config', '${GA_ID}');`}
   <body>
     <div class="container">
       <header class="site-header">
-        <a class="brand" href="/">{me.name}</a>
+        <a class="brand" href="/">{site.name}</a>
         <nav>
           {nav.map((n) => (
             <a href={n.href} aria-current={path === n.href ? 'page' : undefined}>{n.label}</a>
@@ -54,7 +55,7 @@ gtag('config', '${GA_ID}');`}
         <slot />
       </main>
       <footer class="site-footer">
-        © {new Date().getFullYear()} {me.name}
+        © {new Date().getFullYear()} {site.name}
       </footer>
     </div>
   </body>
