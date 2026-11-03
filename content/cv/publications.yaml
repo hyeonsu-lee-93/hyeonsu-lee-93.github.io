@@ -79,6 +79,13 @@
 
 # ---- Preprints -------------------------------------------------------------
 
+- id: cho2026numbersense
+  type: preprint
+  title: Learning from Natural Images Untangles Number Sense
+  authors: Cho Y*, Lee H*, Deneuville E & Jang J
+  venue: Under review
+  year: 2026
+
 - id: choi2020biorxiv
   type: preprint
   title: Slow rhythmic eye motion predicts periodic alternation of bistable perception
@@ -88,6 +95,16 @@
   doi: 10.1101/2020.09.18.303198
 
 # ---- Selected conference presentations ------------------------------------
+
+- id: ccn2026
+  type: conference
+  scope: international
+  selected: true
+  title: Separating numerosity and proportion representations through pretraining
+  authors: Cho Y*, Lee H*, Deneuville E & Jang J
+  venue: Cognitive Computational Neuroscience
+  abbr: CCN
+  year: 2026
 
 - id: sfn2025
   type: conference
@@ -123,7 +140,6 @@
 - id: ksbns2017
   type: conference
   scope: international
-  selected: true
   title: Working memory pre-allocation improves the performance of sequential memory task
   authors: Lee H, Choi W & Paik SB
   venue: Korean Society for Brain and Neural Sciences
@@ -132,6 +148,33 @@
   note: (Best Presentation Award)
 
 # ---- International conferences --------------------------------------------
+
+- id: ksbns2026number
+  type: conference
+  scope: international
+  title: Training on natural images disentangles interfering numerical codes in deep neural networks
+  authors: Cho Y*, Lee H*, Deneuville E & Jang J
+  venue: Korean Society for Brain and Neural Sciences
+  abbr: KSBNS
+  year: 2026
+
+- id: ksbns2026eeg
+  type: conference
+  scope: international
+  title: Reducing high-density EEG channels while preserving depression-related ERP signatures
+  authors: Cho Y*, Choi S*, Lee H & Jang J
+  venue: Korean Society for Brain and Neural Sciences
+  abbr: KSBNS
+  year: 2026
+
+- id: fens2026
+  type: conference
+  scope: international
+  title: Pretraining on natural images separates numerosity and proportion representations
+  authors: Cho Y*, Lee H*, Deneuville E & Jang J
+  venue: Federation of European Neuroscience Societies
+  abbr: FENS
+  year: 2026
 
 - id: ksbns2025
   type: conference
@@ -296,6 +339,24 @@
   year: 2016
 
 # ---- Domestic conferences --------------------------------------------------
+
+- id: cbrain2026number
+  type: conference
+  scope: domestic
+  title: Natural image pre-training disentangles distinct quantity representations
+  authors: Cho Y*, Lee H*, … & Jang J
+  venue: Korean Society for Computational Neuroscience Meeting
+  abbr: cbrain
+  year: 2026
+
+- id: cbrain2026eeg
+  type: conference
+  scope: domestic
+  title: Reducing high-density EEG to extract a minimal ERP feature set for depression classification
+  authors: Cho Y*, Choi S*, Lee H & Jang J
+  venue: Korean Society for Computational Neuroscience Meeting
+  abbr: cbrain
+  year: 2026
 
 - id: cbrain2025
   type: conference

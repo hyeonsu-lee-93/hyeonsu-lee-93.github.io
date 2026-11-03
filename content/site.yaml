@@ -38,7 +38,7 @@ interests:
 # CV의 Skills (한 항목이 한 줄)
 skills:
   - Brain-inspired AI, Python, MATLAB, Illustrator
-  - Neural network modeling & simulation, Data analysis, Mathematical modeling
+  - Neural network modeling & simulation, Data analysis, Mathematical modeling, Dynamical systems modeling
   - LLM simulation, Multi-agent simulation, Human psychophysical experiment, Eye-tracking
 
 google_analytics: G-B6CYVDTBRH        # 구글 애널리틱스 ID. 비우면 꺼짐
@@ -72,8 +72,8 @@ cv:
   education: Education
   experience: Research Experience
   journals: Journal Articles
-  journal_legend: "* equal contribution, † corresponding author"
-  preprints: Preprints
+  journal_legend: "* co-first, † co-corresponding author"
+  preprints: Preprints / Under Review
   selected_conferences: Selected Conference Presentations
   patents: Patents
   conferences: Conference Presentations
